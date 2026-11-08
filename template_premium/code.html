@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="dark" lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Template Premium &amp; Senjata Kreator - fajarcreative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-fixed-dim": "#e3b5ff",
+            "error": "#ffb4ab",
+            "surface-container-low": "#131b2e",
+            "secondary-container": "#c78217",
+            "outline": "#a9898e",
+            "secondary": "#ffb95d",
+            "on-primary-fixed-variant": "#90003d",
+            "on-surface-variant": "#e2bec3",
+            "inverse-on-surface": "#283044",
+            "on-tertiary-fixed-variant": "#6a1c9b",
+            "on-primary-container": "#5a0023",
+            "surface-variant": "#2d3449",
+            "primary-container": "#ff4c83",
+            "on-secondary": "#462a00",
+            "on-error": "#690005",
+            "secondary-fixed": "#ffddb7",
+            "surface-container-high": "#222a3d",
+            "on-tertiary-fixed": "#2f004c",
+            "on-primary-fixed": "#3f0017",
+            "inverse-surface": "#dae2fd",
+            "on-secondary-fixed": "#2a1700",
+            "primary-fixed": "#ffd9df",
+            "tertiary": "#e3b5ff",
+            "outline-variant": "#5a4045",
+            "error-container": "#93000a",
+            "on-surface": "#dae2fd",
+            "background": "#0b1326",
+            "on-tertiary-container": "#44006b",
+            "surface-container-lowest": "#060e20",
+            "primary": "#ffb1c0",
+            "surface-tint": "#ffb1c0",
+            "on-primary": "#660029",
+            "secondary-fixed-dim": "#ffb95d",
+            "tertiary-fixed": "#f4daff",
+            "surface-container": "#171f33",
+            "surface-dim": "#0b1326",
+            "tertiary-container": "#ba70ec",
+            "on-tertiary": "#4e0079",
+            "surface-container-highest": "#2d3449",
+            "primary-fixed-dim": "#ffb1c0",
+            "on-secondary-fixed-variant": "#653e00",
+            "on-background": "#dae2fd",
+            "on-secondary-container": "#3d2400",
+            "on-error-container": "#ffdad6",
+            "surface": "#0b1326",
+            "inverse-primary": "#bb0452",
+            "surface-bright": "#31394d"
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          spacing: { "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin": "2rem", "gutter": "1.5rem" },
+          fontFamily: {
+            "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"],
+            "display-hero": ["Plus Jakarta Sans"], "label-xs": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen">
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)] border-b border-surface-container-high">
+    <div class="h-20 w-full px-3 sm:px-margin flex items-center justify-between gap-2 sm:gap-gutter">
+      <a href="../roadmap_utama_step_by_step_cuan_instagram/code.html" class="flex items-center gap-2 sm:gap-space-md shrink-0 hover:opacity-90 transition-opacity">
+        <img alt="fajarcreative logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover ring-2 ring-primary-container/40 shadow-md bg-white p-0.5 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBro0SNaSR4_J6183-Pp-obBr0O-PVi5hj8APnOjNq5H_i771RLLSnjZ4XTkF6xQMgzQUMAJ1wm9ymoJ8pBmPFCT_9CnTP37wz0S_kVYW9t-Jda-pj3g1zly_UDsz8QzZI9tT11X37LXLn0zN1xjdhkq4agh5FE-LAjTAqQDpmklTKnTRH1QKayX_7WCPl2APpX8oQe1pBPnpkkVFb6_Fssi6i3hXp2bMWB2KJocLi6-EHDEP8Z_6wmWw">
+        <div class="hidden sm:flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">fajarcreative</span>
+          <span class="font-label-xs text-label-xs text-secondary tracking-wider uppercase mt-space-xs">Blueprint Edukasi</span>
+        </div>
+      </a>
+      <nav class="flex items-center gap-1 sm:gap-space-xs overflow-x-auto py-1 max-w-[55vw] sm:max-w-none">
+        <a class="px-2.5 sm:px-space-md py-1.5 sm:py-space-sm rounded-lg text-xs sm:text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors duration-150 whitespace-nowrap" href="../roadmap_utama_step_by_step_cuan_instagram/code.html">Roadmap Utama</a>
+        <a class="px-2.5 sm:px-space-md py-1.5 sm:py-space-sm rounded-lg text-xs sm:text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors duration-150 whitespace-nowrap" href="../modul_fondasi_konten_viral/code.html">Fondasi &amp; Konten Viral</a>
+        <a class="px-2.5 sm:px-space-md py-1.5 sm:py-space-sm rounded-lg text-xs sm:text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors duration-150 whitespace-nowrap" href="../strategi_monetisasi_kalkulator_cuan/code.html">Monetisasi &amp; Kalkulator</a>
+        <a class="px-2.5 sm:px-space-md py-1.5 sm:py-space-sm rounded-lg text-xs sm:text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors duration-150 whitespace-nowrap" href="../toolkit_action_checklist_cuan/code.html">Toolkit &amp; Checklist</a>
+        <a aria-current="page" class="px-2.5 sm:px-space-md py-1.5 sm:py-space-sm transition-colors duration-150 bg-surface-container-high text-primary font-bold rounded-lg shadow-[0_0_12px_rgba(255,177,192,0.15)] text-xs sm:text-label-lg whitespace-nowrap flex items-center gap-1" href="../template_premium/code.html">
+          <span>💎 Template Premium</span>
+        </a>
+      </nav>
+      <div class="flex items-center gap-1.5 sm:gap-space-md shrink-0">
+        <a class="inline-flex items-center gap-1 bg-secondary text-on-secondary hover:bg-secondary-fixed text-xs sm:font-label-lg sm:text-label-lg px-2 sm:px-space-md py-1.5 sm:py-space-sm rounded-full shadow-md transition-all duration-200 active:scale-95" href="https://wa.me/6282338903403" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined text-[16px]">chat</span>
+          <span class="hidden md:inline">Konsultasi WA</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-background">
+    <div class="flex flex-col w-full">
+      <!-- HERO SECTION -->
+      <section class="relative w-full overflow-hidden px-margin py-space-xl">
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[850px] h-[360px] bg-primary-container/20 rounded-full blur-[130px] pointer-events-none"></div>
+        <div class="absolute top-40 right-10 w-[400px] h-[400px] bg-secondary-container/15 rounded-full blur-[110px] pointer-events-none"></div>
+        
+        <div class="relative max-w-7xl mx-auto flex flex-col items-center text-center gap-space-md z-10 pt-space-md">
+          <div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high shadow-md">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+            <span class="font-label-xs text-label-xs text-primary font-bold uppercase tracking-widest">VAULT 4 TEMPLATE PREMIUM • SIAP PAKAI 2026</span>
+          </div>
+
+          <h1 class="font-display-hero text-3xl sm:text-5xl md:text-6xl text-on-surface font-black tracking-tight max-w-4xl leading-[1.12]">
+            Koleksi 4 Senjata &amp; <span class="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">Landing Page Template Premium</span>
+          </h1>
+
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Tiap template memiliki halaman landing page khusus dengan fitur interaktif lengkap. Salin, sesuaikan, dan gunakan langsung untuk mempercepat monetisasi akun Instagram Anda.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-space-sm pt-space-xs">
+            <a href="#katalog-template" class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-lg text-label-lg px-space-lg py-space-md rounded-full shadow-lg transition-all active:scale-95">
+              <span class="material-symbols-outlined text-[20px]">grid_view</span>
+              <span>Jelajahi 4 Template</span>
+            </a>
+            <a href="https://wa.me/6282338903403" target="_blank" class="inline-flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-lg text-label-lg px-space-lg py-space-md rounded-full shadow-md transition-all">
+              <span class="material-symbols-outlined text-secondary text-[20px]">chat</span>
+              <span>Request Template Kustom</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 DEDICATED TEMPLATE LANDING PAGES SHOWCASE -->
+      <section class="w-full px-margin py-space-xl" id="katalog-template">
+        <div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+            <div>
+              <span class="font-label-xs text-label-xs text-secondary font-bold uppercase tracking-widest">LANDING PAGE TERPISAH</span>
+              <h2 class="font-headline-xl text-headline-xl text-on-surface font-bold mt-1">4 Halaman Website Template Siap Pakai</h2>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+              Klik pada masing-masing kartu untuk membuka website landing page mandiri lengkap dengan preview interaktif.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+            
+            <!-- TEMPLATE 1: 100+ Template Hook Reels Bikin FOMO -->
+            <div class="bg-surface-container p-space-lg rounded-2xl shadow-xl flex flex-col justify-between border border-surface-container-high hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 group">
+              <div class="flex flex-col gap-space-md">
+                <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container-high">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="100 Template Hook Reels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk-unj9RwX051rvY5bzozRmYiW_rG8ggvSroMetGitZnrG6lKAXG-ECxtOb4eZbGd1Mez-HghCuc-jFC6DWJqvETEN0Xcf9wtY7vtwLmmfERxJwaY0oSvKekZRuAtMYvhsJIMbpSfys2DM4IP8R-QqvXc9lIlTnayUSF34J6enc2K5X0Ob6HXzlRZ1-ri6BdDGpD0YVssIKldiFTT68TY14qvnogyHZtGgtZXaE8mJ">
+                  <span class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container font-label-xs text-label-xs font-bold uppercase shadow-md">Template 01 • PDF 14 Halaman</span>
+                  <span class="absolute bottom-3 right-3 px-space-sm py-0.5 rounded bg-surface/85 backdrop-blur-md text-primary font-label-xs text-label-xs font-bold">Live Simulator Included</span>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <h3 class="font-headline-lg text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">100+ Template Hook Reels Bikin FOMO</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Struktur hook psikologis 3 detik pertama terbagi dalam kategori Kontroversial, Curhat Emosional, dan Rahasia Industri yang terbukti menghentikan scrolling penonton seketika.
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-space-xs py-space-xs">
+                  <div class="bg-surface-container-low p-space-xs rounded-lg text-center">
+                    <span class="font-label-xs text-label-xs text-outline block">Tipe Konten</span>
+                    <span class="font-label-md text-label-md text-on-surface font-bold">Instagram Reels</span>
+                  </div>
+                  <div class="bg-surface-container-low p-space-xs rounded-lg text-center">
+                    <span class="font-label-xs text-label-xs text-outline block">Tingkat Retensi</span>
+                    <span class="font-label-md text-label-md text-primary font-bold">Naik s/d 78%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+                <span class="font-label-xs text-label-xs text-secondary font-semibold">Format: Web Landing + PDF</span>
+                <a href="../stitch_multi_template_landing_pages_showcase/100_template_hook_reels_bikin_fomo/code.html" class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary px-space-md py-space-xs rounded-full font-label-md text-label-md font-bold shadow-md transition-all group-hover:scale-105">
+                  <span>Buka Landing Page</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- TEMPLATE 2: Checklist Audit Bio Instagram Pro -->
+            <div class="bg-surface-container p-space-lg rounded-2xl shadow-xl flex flex-col justify-between border border-surface-container-high hover:border-secondary/50 transition-all duration-300 hover:-translate-y-1 group">
+              <div class="flex flex-col gap-space-md">
+                <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container-high">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Checklist Audit Bio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBX-SL107B1eae3J37DBbMd022s7VyTS1Vt0E8gWcc372_yi_wJ39WvouHuIH6EmGK3EMo2W2cvkeLya_pvNpEisViHxUTn_I9JnMkD4Lu4nacM39balfk-iVS5R3E29eyz2R7Iy0_tkDoUmzAkQtYD6IokOYKl2pzGseQy00bWGn23rtwXY55PUW2DTqz_wKYWw1kjnV8zObRqT5157m54yUbBhaBtwX36i5LtycU">
+                  <span class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary font-label-xs text-label-xs font-bold uppercase shadow-md">Template 02 • Checklist Interaktif</span>
+                  <span class="absolute bottom-3 right-3 px-space-sm py-0.5 rounded bg-surface/85 backdrop-blur-md text-secondary font-label-xs text-label-xs font-bold">Live Scoring System</span>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <h3 class="font-headline-lg text-headline-md text-on-surface font-bold group-hover:text-secondary transition-colors">Checklist Audit Bio Instagram Pro</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    12 poin krusial audit profil Instagram untuk mengubah profil sepi jadi magnet pengonversi follower. Dilengkapi kalkulator skor otomatis dan formula value proposition 3 detik.
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-space-xs py-space-xs">
+                  <div class="bg-surface-container-low p-space-xs rounded-lg text-center">
+                    <span class="font-label-xs text-label-xs text-outline block">Fokus Utama</span>
+                    <span class="font-label-md text-label-md text-on-surface font-bold">Optimasi Profil &amp; Bio</span>
+                  </div>
+                  <div class="bg-surface-container-low p-space-xs rounded-lg text-center">
+                    <span class="font-label-xs text-label-xs text-outline block">Konversi Follower</span>
+                    <span class="font-label-md text-label-md text-secondary font-bold">96/100 Skor Daya Pikat</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+                <span class="font-label-xs text-label-xs text-secondary font-semibold">Format: Web Landing + Audit Sheet</span>
+                <a href="../stitch_multi_template_landing_pages_showcase/checklist_audit_bio_instagram_pro/code.html" class="inline-flex items-center gap-space-xs bg-secondary text-on-secondary hover:bg-secondary-fixed px-space-md py-space-xs rounded-full font-label-md text-label-md font-bold shadow-md transition-all group-hover:scale-105">
+                  <span>Buka Landing Page</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- TEMPLATE 3: Kalkulator Cuan Spreadsheet -->
+            <div class="bg-surface-container p-space-lg rounded-2xl shadow-xl flex flex-col justify-between border border-surface-container-high hover:border-tertiary/50 transition-all duration-300 hover:-translate-y-1 group">
+              <div class="flex flex-col gap-space-md">
+                <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container-high flex items-center justify-center p-space-lg bg-gradient-to-br from-surface-container-high to-surface-container-lowest">
+                  <div class="flex flex-col items-center gap-space-sm text-tertiary">
+                    <span class="material-symbols-outlined text-[54px]">calculate</span>
+                    <span class="font-headline-sm text-headline-sm text-on-surface font-bold">Dynamic Revenue Simulator</span>
+                    <span class="font-label-xs text-label-xs text-outline">Formula Excel + Google Sheets Siap Duplikat</span>
+                  </div>
+                  <span class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-tertiary-container text-on-tertiary font-label-xs text-label-xs font-bold uppercase shadow-md">Template 03 • Excel &amp; Sheets</span>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <h3 class="font-headline-lg text-headline-md text-on-surface font-bold group-hover:text-tertiary transition-colors">Kalkulator Cuan Spreadsheet</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Simulasi otomatis hitung RPM reels, potensi pendapatan affiliate, komisi sponsorship brand, margin laba produk digital, dan target closing mingguan.
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-space-xs py-space-xs">
+                  <div class="bg-surface-container-low p-space-xs rounded-lg text-center">
+                    <span class="font-label-xs text-label-xs text-outline block">Model Finansial</span>
+                    <span class="font-label-md text-label-md text-on-surface font-bold">4 Arsitektur Cuan</span>
+                  </div>
+                  <div class="bg-surface-container-low p-space-xs rounded-lg text-center">
+                    <span class="font-label-xs text-label-xs text-outline block">Otomasi</span>
+                    <span class="font-label-md text-label-md text-tertiary font-bold">100% Rumus Siap Pakai</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+                <span class="font-label-xs text-label-xs text-secondary font-semibold">Format: Web Landing + XLSX</span>
+                <a href="../stitch_multi_template_landing_pages_showcase/kalkulator_cuan_spreadsheet/code.html" class="inline-flex items-center gap-space-xs bg-tertiary-container text-on-tertiary hover:opacity-90 px-space-md py-space-xs rounded-full font-label-md text-label-md font-bold shadow-md transition-all group-hover:scale-105">
+                  <span>Buka Landing Page</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- TEMPLATE 4: Template Pitch Brand & Rate Card -->
+            <div class="bg-surface-container p-space-lg rounded-2xl shadow-xl flex flex-col justify-between border border-surface-container-high hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 group">
+              <div class="flex flex-col gap-space-md">
+                <div class="relative w-full h-56 rounded-xl overflow-hidden bg-surface-container-high">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Pitch Brand & Rate Card" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATWK2NJfw0AShvsmlhiXqjExH5Xy5I7iVKwx0Yi-fHmPc_xWcdfXQoXU_dxhr5B60Kg-OiZjFrY--uBOLXlZec-Js6iRW__HhAXzbpI-I7k9o1h4igO6laC1qaa8xHsBbkaQNhVIe9HR-5bMgBzpT3qhTcl9MNyRaYtb1vHbzXiNTfCJutZtJJch2WUj8nq5hJiObxA3kyK450aTYa_1nHURdqsaLwTBMQmAIitE2w">
+                  <span class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container font-label-xs text-label-xs font-bold uppercase shadow-md">Template 04 • Pitching &amp; Media Kit</span>
+                  <span class="absolute bottom-3 right-3 px-space-sm py-0.5 rounded bg-surface/85 backdrop-blur-md text-primary font-label-xs text-label-xs font-bold">Canva Template Ready</span>
+                </div>
+                <div class="flex flex-col gap-space-xs">
+                  <h3 class="font-headline-lg text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">Template Pitch Brand &amp; Rate Card</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Format email penawaran sponsor ke brand manager bernilai jutaan, klausul perlindungan hak cipta, dan template media kit presentasi Canva berkelas profesional.
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-space-xs py-space-xs">
+                  <div class="bg-surface-container-low p-space-xs rounded-lg text-center">
+                    <span class="font-label-xs text-label-xs text-outline block">Benchmark Rate</span>
+                    <span class="font-label-md text-label-md text-on-surface font-bold">Standar Industri 2026</span>
+                  </div>
+                  <div class="bg-surface-container-low p-space-xs rounded-lg text-center">
+                    <span class="font-label-xs text-label-xs text-outline block">Copy Template</span>
+                    <span class="font-label-md text-label-md text-primary font-bold">Tingkat Respon Tinggi</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+                <span class="font-label-xs text-label-xs text-secondary font-semibold">Format: Web Landing + Canva Link</span>
+                <a href="../stitch_multi_template_landing_pages_showcase/template_pitch_brand_rate_card/code.html" class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary px-space-md py-space-xs rounded-full font-label-md text-label-md font-bold shadow-md transition-all group-hover:scale-105">
+                  <span>Buka Landing Page</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- BOTTOM NAVIGATION HUB -->
+      <section class="w-full px-margin py-space-xl">
+        <div class="max-w-7xl mx-auto bg-surface-container p-space-lg rounded-2xl shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md border border-surface-container-high">
+          <div class="flex flex-col gap-1">
+            <span class="font-label-xs text-label-xs text-primary uppercase font-bold tracking-wider">Navigasi Modul</span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Lanjutkan Belajar Materi Utama</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Pelajari kurikulum lengkap dari awal di Roadmap Utama atau cek Checklist Misi.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-space-sm shrink-0">
+            <a href="../roadmap_utama_step_by_step_cuan_instagram/code.html" class="px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface hover:text-primary transition-colors font-label-md text-label-md font-semibold">
+              ← Roadmap Utama
+            </a>
+            <a href="../toolkit_action_checklist_cuan/code.html" class="px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface hover:text-primary transition-colors font-label-md text-label-md font-semibold">
+              Toolkit &amp; Checklist
+            </a>
+            <a href="../strategi_monetisasi_kalkulator_cuan/code.html" class="px-space-md py-space-sm rounded-full bg-primary-container text-on-primary-container hover:bg-primary transition-colors font-label-md text-label-md font-bold shadow-md">
+              Monetisasi &amp; Kalkulator →
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-container-lowest mt-space-xl pt-space-xl pb-space-lg">
+    <div class="w-full px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl">
+        <div class="lg:col-span-2 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-sm">
+            <img alt="fajarcreative logo" class="w-10 h-10 rounded-full object-cover ring-2 ring-primary-container/40 shadow-md bg-white p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBro0SNaSR4_J6183-Pp-obBr0O-PVi5hj8APnOjNq5H_i771RLLSnjZ4XTkF6xQMgzQUMAJ1wm9ymoJ8pBmPFCT_9CnTP37wz0S_kVYW9t-Jda-pj3g1zly_UDsz8QzZI9tT11X37LXLn0zN1xjdhkq4agh5FE-LAjTAqQDpmklTKnTRH1QKayX_7WCPl2APpX8oQe1pBPnpkkVFb6_Fssi6i3hXp2bMWB2KJocLi6-EHDEP8Z_6wmWw">
+            <span class="font-headline-sm text-headline-sm text-on-surface">fajarcreative</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            Ekosistem pembelajaran intensif creator economy. Mengubah akun Instagram dari zero follower menjadi mesin monetisasi berulang dengan sistematis, terukur, dan berbasis data riil.
+          </p>
+          <div class="flex items-center gap-space-sm text-secondary">
+            <span class="material-symbols-outlined">verified</span>
+            <span class="font-label-md text-label-md text-on-surface">Vault Template Terverifikasi • Update Algoritma 2026</span>
+          </div>
+          <div class="flex flex-col gap-1 pt-space-xs">
+            <a class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary text-body-sm font-body-sm transition-colors" href="mailto:fajarcreative@bisnis.com">
+              <span class="material-symbols-outlined text-[16px] text-primary">mail</span>
+              <span>fajarcreative@bisnis.com</span>
+            </a>
+            <a class="flex items-center gap-space-xs text-secondary hover:underline text-body-sm font-body-sm font-semibold transition-colors" href="https://wa.me/6282338903403" target="_blank">
+              <span class="material-symbols-outlined text-[16px]">chat</span>
+              <span>Konsultasi WA: 082338903403</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Modul Inti</h4>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="../roadmap_utama_step_by_step_cuan_instagram/code.html">Fase 01: Fondasi Niche &amp; Profil</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="../modul_fondasi_konten_viral/code.html">Fase 02: Reels Hook Mastery</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="../modul_fondasi_konten_viral/code.html">Fase 03: Algoritma &amp; Viralitas</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="../strategi_monetisasi_kalkulator_cuan/code.html">Fase 04: Penjualan Digital &amp; Ratecard</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="../toolkit_action_checklist_cuan/code.html">Fase 05: Otomasi DM &amp; Funnel</a>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">4 Template Premium</h4>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="../stitch_multi_template_landing_pages_showcase/100_template_hook_reels_bikin_fomo/code.html">100+ Template Hook Reels</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="../stitch_multi_template_landing_pages_showcase/checklist_audit_bio_instagram_pro/code.html">Checklist Audit Bio Pro</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="../stitch_multi_template_landing_pages_showcase/kalkulator_cuan_spreadsheet/code.html">Kalkulator Cuan Spreadsheet</a>
+          <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="../stitch_multi_template_landing_pages_showcase/template_pitch_brand_rate_card/code.html">Template Pitch Brand &amp; Rate Card</a>
+        </div>
+
+        <div class="flex flex-col gap-space-md">
+          <h4 class="font-headline-sm text-headline-sm text-on-surface">Update Template Baru</h4>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Dapatkan notifikasi rilisan template dan studi kasus konten terbaru langsung di WhatsApp/inbox Anda.
+          </p>
+          <div class="flex flex-col gap-space-xs">
+            <a href="https://wa.me/6282338903403" target="_blank" class="inline-flex items-center justify-center gap-space-xs bg-secondary text-on-secondary px-space-md py-space-xs rounded-full font-label-md text-label-md font-bold hover:bg-secondary-fixed transition-colors">
+              <span class="material-symbols-outlined text-[16px]">chat</span>
+              <span>Hubungi Tim Kreator</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-low p-space-md rounded-xl mb-space-lg">
+        <p class="font-label-xs text-label-xs text-on-surface-variant leading-relaxed text-justify">
+          <strong class="text-secondary">DISCLAIMER PENGHASILAN:</strong> Seluruh template, modul, dan materi di fajarcreative disediakan untuk tujuan edukasi praktis. Hasil setiap kreator bergantung pada disiplin eksekusi, niche pasar, dan strategi masing-masing.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md">
+        <p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 fajarcreative by Creator Accelerator Lab. Seluruh hak cipta dilindungi.</p>
+        <div class="flex items-center gap-space-lg">
+          <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Syarat &amp; Ketentuan</a>
+          <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

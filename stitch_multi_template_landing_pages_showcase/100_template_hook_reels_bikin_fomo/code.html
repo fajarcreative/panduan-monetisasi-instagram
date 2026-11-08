@@ -1,0 +1,812 @@
+<!DOCTYPE html><html class="dark" lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#002113", "background": "#121317", "outline-variant": "#5c3f42", "primary-container": "#ff4f73", "surface-container": "#1f1f24", "surface-container-low": "#1a1b20", "surface-bright": "#38393e", "on-background": "#e3e2e8", "on-secondary": "#3c0091", "error-container": "#93000a", "surface-container-lowest": "#0d0e12", "primary-fixed-dim": "#ffb2ba", "tertiary-fixed-dim": "#4edea3", "surface-container-high": "#292a2e", "secondary-fixed": "#e9ddff", "on-primary": "#670020", "tertiary": "#4edea3", "on-primary-fixed-variant": "#910030", "surface-dim": "#121317", "on-primary-container": "#5a001b", "primary-fixed": "#ffd9dc", "inverse-primary": "#bd0042", "on-secondary-fixed": "#23005c", "on-surface": "#e3e2e8", "on-primary-fixed": "#400011", "primary": "#ffb2ba", "surface-variant": "#343439", "secondary": "#d0bcff", "on-tertiary": "#003824", "on-surface-variant": "#e5bdc0", "outline": "#ac888b", "inverse-on-surface": "#2f3035", "surface": "#121317", "on-secondary-container": "#c4abff", "secondary-container": "#571bc1", "surface-tint": "#ffb2ba", "on-tertiary-container": "#00311f", "error": "#ffb4ab", "secondary-fixed-dim": "#d0bcff", "inverse-surface": "#e3e2e8", "surface-container-highest": "#343439", "tertiary-fixed": "#6ffbbe", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "on-error": "#690005", "on-secondary-fixed-variant": "#5516be", "tertiary-container": "#00a572" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "2rem", "space-2xl": "4rem", "space-3xl": "6rem" }, "fontFamily": { "body-md": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display-xl-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-xl-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)] border-b border-surface-container-high">
+<div class="h-20 max-w-7xl mx-auto px-3 sm:px-margin flex items-center justify-between gap-2 sm:gap-gutter">
+<a href="../../roadmap_utama_step_by_step_cuan_instagram/code.html" class="flex items-center gap-2 sm:gap-space-md shrink-0 hover:opacity-90 transition-opacity">
+<img alt="fajarcreative logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover overflow-hidden ring-2 ring-primary-container/20 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBro0SNaSR4_J6183-Pp-obBr0O-PVi5hj8APnOjNq5H_i771RLLSnjZ4XTkF6xQMgzQUMAJ1wm9ymoJ8pBmPFCT_9CnTP37wz0S_kVYW9t-Jda-pj3g1zly_UDsz8QzZI9tT11X37LXLn0zN1xjdhkq4agh5FE-LAjTAqQDpmklTKnTRH1QKayX_7WCPl2APpX8oQe1pBPnpkkVFb6_Fssi6i3hXp2bMWB2KJocLi6-EHDEP8Z_6wmWw">
+<div class="hidden sm:flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">fajarcreative</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Template Premium</span>
+</div>
+</a>
+
+<nav class="flex items-center gap-1 sm:gap-space-xs overflow-x-auto py-1 max-w-[55vw] sm:max-w-none">
+<a class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-surface-container-high text-on-surface hover:text-primary transition-colors flex items-center gap-1" href="../../roadmap_utama_step_by_step_cuan_instagram/code.html">
+<span class="material-symbols-outlined text-[15px]">arrow_back</span>
+<span class="hidden md:inline">Roadmap Utama</span>
+</a>
+<a class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-surface-container-high text-on-surface hover:text-primary transition-colors flex items-center gap-1" href="../../template_premium/code.html">
+<span class="material-symbols-outlined text-[15px]">grid_view</span>
+<span class="hidden md:inline">Semua Template</span>
+</a>
+<a aria-current="page" class="px-2.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap bg-primary-container text-on-primary-container shadow-md" href="../100_template_hook_reels_bikin_fomo/code.html">⚡ Hook Reels</a><a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../checklist_audit_bio_instagram_pro/code.html">🔍 Audit Bio</a><a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../kalkulator_cuan_spreadsheet/code.html">📊 Spreadsheet</a><a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../template_pitch_brand_rate_card/code.html">💼 Rate Card</a>
+</nav>
+
+<div class="flex items-center gap-2 shrink-0">
+<a href="https://wa.me/6282338903403" target="_blank" class="inline-flex items-center gap-1 px-2.5 sm:px-space-md py-1.5 sm:py-space-xs rounded-full bg-surface-container text-tertiary hover:text-tertiary-fixed text-xs font-semibold transition-colors">
+<span class="material-symbols-outlined text-base">chat</span>
+<span class="hidden lg:inline">WA: 082338903403</span>
+</a>
+</div>
+</div>
+</header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- HERO SHOWCASE SECTION -->
+<section class="relative w-full overflow-hidden pb-space-3xl pt-space-xl">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-primary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-48 -right-32 w-[480px] h-[480px] bg-secondary-container/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin relative z-10">
+<!-- Top Tag & Navigation Path -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high shadow-inner">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm tracking-widest text-primary uppercase font-bold">Koleksi Formula Viral 2026 • 14 Halaman PDF</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-tertiary"><span class="material-symbols-outlined text-base">verified</span> Verified Asset</span>
+<span class="text-surface-bright">•</span>
+<span class="">Ukuran File: 4.2 MB</span>
+</div>
+</div>
+<!-- Hero Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left: Copy & Value Proposition -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<h1 class="font-display-xl text-display-xl text-on-surface font-extrabold tracking-tight leading-[1.08]">
+            100+ Template <span class="text-primary">Hook Reels</span> Bikin FOMO: Stop Scrolling 3 Detik.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Jangan mulai dari kanvas kosong. Terapkan struktur hook psikologis kategori <strong class="text-on-surface font-semibold">Kontroversial, Curhat Emosional, dan Rahasia Industri</strong> yang terbukti mendatangkan jutaan views dan ledakan follower organik seketika.
+          </p>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto pt-space-xs">
+<a class="inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_12px_32px_-8px_rgba(255,79,115,0.45)] hover:bg-primary transition-all hover:-translate-y-0.5" href="#download-box">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">download</span>
+<span class="">Unduh PDF Sekarang (Gratis - 4.2 MB)</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-md rounded-full bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-lg text-label-lg transition-all" href="#simulator">
+<span class="material-symbols-outlined">play_circle</span>
+<span class="">Lihat Simulator Hook</span>
+</a>
+</div>
+<!-- Social Proof Bar -->
+<div class="flex flex-wrap items-center gap-space-lg pt-space-sm">
+<div class="flex items-center -space-x-2.5">
+<img class="w-10 h-10 rounded-full object-cover shadow-md" data-alt="Portrait closeup avatar of a male content creator with vibrant neon studio backlighting and glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-ST0iQAdx-3XogkEoClnnQ_0w6_7o3CS9IjvOdi4t95Y5ZGaqPowzUwyUR2iR5rt_FKfg7aQtpq9jOK-5570lkWWiWonWljQdJrPRsW5PLD13z6MtKjZC0-nWIjziSMrTVbLckgP53jmKzY_fS8NmLvETPaJTfdO1TYiFe0ijcyf0RGzYdKsZr3jbXkhyKwQs1vB-39yrY_0DqoJacf5iSfLsm66AI8BexOZtE6rE">
+<img class="w-10 h-10 rounded-full object-cover shadow-md" data-alt="Portrait of an energetic female digital marketer holding a smartphone in modern dark creative studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF26yqZPSo7dRyVBr-pgq4WbCwsJblR3E_qePWqOIZvZjsuywa2WWrxhXGaxWWRZOUvvr59IsWXOtuFya6eBejtQDh-07ARBWjKS3jSYXHbIZBsNNCILdiExLB5-fJGMov37ZoYMx2Bzrjkl2FLfSBygEHxDRWNgHVzqxEYs45woyUc27eJuZHd4F9NAnt2HOGd-iSPY1TquGdTzDroG2w1ps3gkUU6ectdDRbDfuF">
+<img class="w-10 h-10 rounded-full object-cover shadow-md" data-alt="Portrait of an Indonesian tech influencer smiling with warm cyberpunk ambient rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3thPI2e5lVoHr3YIhm3jelYOdi7w1rAyrS_uGp3yrxtNPCgbfD0L_QvxxvkeZTHDL3b5YsevJ5zOcLvEoKrkfM8mONpDzNfZJWTWADh_W4gA0vKQ7A2nv9xNZQ_O945MliE8prl5DR129-iGtLHPjk8W5vuEwlwjtVhFYaRFqQSgqyMwYfi-3XjgUvPSo1N0h1F39JJKOFIo7OGtDLkm6yF90z0lxmreY_19494wD">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center font-label-sm text-label-sm text-primary font-bold shadow-md">
+                +18k
+              </div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface font-bold ml-1">4.9/5</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant"><strong class="text-on-surface font-semibold">18,420+ kreator</strong> telah mengoptimalkan retention rate Reels</span>
+</div>
+</div>
+</div>
+<!-- Right: Modern Dark Tablet Mockup Showcase -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full rounded-xl bg-surface-container p-space-md shadow-2xl backdrop-blur-xl">
+<!-- Mockup Window Bar -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-error-container"></div>
+<div class="w-3 h-3 rounded-full bg-outline-variant"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary-container"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono ml-2">reels_hook_formula_v2.pdf</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold">PAGE 03 / 14</span>
+</div>
+<!-- Content Area of Document -->
+<div class="rounded-lg bg-surface-container-lowest p-space-lg flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">S-TIER RETENTION HOOK</span>
+<span class="font-label-sm text-label-sm text-tertiary font-mono bg-tertiary-container/30 px-space-xs py-0.5 rounded">+84% Watched 3s</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-high/60 backdrop-blur-md">
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">record_voice_over</span>
+                  Voiceover / Teks On-Screen (0:00 - 0:02):
+                </div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+                  "Jangan pernah posting Reels jam 7 malam kalau kamu belum ubah 1 setting rahasia ini..."
+                </p>
+</div>
+<!-- Waveform & Psychological Triggers -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Triger</span>
+<span class="font-label-md text-label-md text-primary font-bold">FOMO &amp; Takut Rugi</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Drop-off</span>
+<span class="font-label-md text-label-md text-tertiary font-bold">&lt; 4.2%</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Optimal Pace</span>
+<span class="font-label-md text-label-md text-secondary-fixed font-bold">140 WPM</span>
+</div>
+</div>
+<!-- Mini Audio Wave Graph -->
+<div class="flex items-end gap-1 h-12 pt-2 px-1">
+<div class="w-1.5 bg-primary rounded-full h-4"></div>
+<div class="w-1.5 bg-primary rounded-full h-8"></div>
+<div class="w-1.5 bg-primary-container rounded-full h-12"></div>
+<div class="w-1.5 bg-primary rounded-full h-7"></div>
+<div class="w-1.5 bg-primary-container rounded-full h-11"></div>
+<div class="w-1.5 bg-secondary rounded-full h-6"></div>
+<div class="w-1.5 bg-surface-bright rounded-full h-3"></div>
+<div class="w-1.5 bg-surface-bright rounded-full h-5"></div>
+<div class="w-1.5 bg-surface-bright rounded-full h-4"></div>
+<div class="w-1.5 bg-surface-bright rounded-full h-8"></div>
+<div class="w-1.5 bg-primary rounded-full h-10"></div>
+<div class="w-1.5 bg-primary-container rounded-full h-12"></div>
+<div class="w-1.5 bg-primary rounded-full h-9"></div>
+<div class="w-1.5 bg-secondary rounded-full h-5"></div>
+<div class="w-1.5 bg-surface-bright rounded-full h-3"></div>
+<div class="w-1.5 bg-surface-bright rounded-full h-4"></div>
+<div class="w-1.5 bg-surface-bright rounded-full h-7"></div>
+<div class="w-1.5 bg-primary rounded-full h-11"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-space-xs">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">graphic_eq</span> Algoritma Sync 100%
+                </span>
+<span class="font-label-sm text-label-sm font-mono text-primary font-semibold">100+ Template Tersedia</span>
+</div>
+</div>
+<!-- Floating Mini Card Tag -->
+<div class="absolute -bottom-4 -left-4 rounded-lg bg-surface-container-highest px-space-md py-space-sm shadow-xl flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">14 Halaman Master Script</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Langsung Copy-Paste ke CapCut</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROBLEM & REALITY CHECK SECTION -->
+<section class="w-full py-space-3xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold mb-space-xs">The Retention Reality</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+          Kenapa 90% Reels Anda Tenggelam Tanpa Penonton?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Audiens modern hanya butuh 1.8 detik untuk memutuskan swipe-up ke video lain. Jika detik pertama Anda diawali sapaan klise, video berkualitas tinggi Anda akan langsung dianggap sampah oleh algoritma.
+        </p>
+</div>
+<!-- Comparison Deck -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-stretch">
+<!-- Weak Hook Card -->
+<div class="flex flex-col rounded-xl bg-surface-container-low p-space-xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-error-container/40 text-error font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">cancel</span> Hook Amatir (Drop Rate 82%)
+            </span>
+<span class="font-mono text-label-sm text-on-surface-variant">Contoh Basi</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest mb-space-md">
+<p class="font-body-md text-body-md text-outline italic">
+              "Halo teman-teman semua, balik lagi di akun aku. Kali ini aku mau sharing 3 tips seputar cara jualan online ya..."
+            </p>
+</div>
+<ul class="flex flex-col gap-space-sm text-on-surface-variant font-body-sm text-body-sm mb-space-lg flex-1">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-base mt-0.5">close</span>
+<span class=""><strong>Membakar 3 detik krusial</strong> hanya untuk sapaan basa-basi yang tidak dipedulikan stranger.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-base mt-0.5">close</span>
+<span class=""><strong>Nol urgensi psikologis</strong>, audiens tidak merasa rugi jika langsung scroll ke konten lucu lain.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-base mt-0.5">close</span>
+<span class="">Algoritma mendeteksi average view duration &lt; 2 detik, distribusi konten langsung dibekukan.</span>
+</li>
+</ul>
+<div class="p-space-sm rounded bg-surface-container flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Rata-rata Views: <strong>120 - 450 views</strong></span>
+<span class="text-error font-bold">Stagnan &amp; Frustrasi</span>
+</div>
+</div>
+<!-- Hypnotic FOMO Hook Card -->
+<div class="flex flex-col rounded-xl bg-surface-container p-space-xl relative overflow-hidden shadow-xl">
+<div class="absolute -right-16 -top-16 w-48 h-48 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-space-xs rounded bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span> Hook Hipnotik FOMO (Vault Aset)
+            </span>
+<span class="font-mono text-label-sm text-primary font-bold">Formula Teruji</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-lowest mb-space-md shadow-inner">
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">
+              "Stop buang modal iklan kalau konten Reels kamu masih skip 1 pola trigger ini..."
+            </p>
+</div>
+<ul class="flex flex-col gap-space-sm text-on-surface font-body-sm text-body-sm mb-space-lg flex-1">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class=""><strong>Membuka Open Loop seketika</strong>: Otak manusia terpaksa menonton sampai akhir demi menutup rasa penasaran.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class=""><strong>FOMO Anchor</strong>: Menargetkan ketakutan kehilangan uang, follower, atau status kompetitif.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="">Retention rate melonjak hingga 78%, memicu sinyal viral boost ke explore feed.</span>
+</li>
+</ul>
+<div class="p-space-sm rounded bg-primary-container/20 flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="">Rata-rata Views: <strong class="text-primary font-extrabold">25,000 - 850,000+ views</strong></span>
+<span class="text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> Viral Loop
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ANATOMY OF A 3-SECOND VIRAL HOOK -->
+<section class="w-full py-space-3xl relative">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Scientific Breakdown</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight mt-space-xs">
+            Anatomi Formula 3 Detik Pembunuh Scroll
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+            Setiap template dalam dokumen PDF 14 halaman ini dibangun di atas 3 pilar neuromarketing yang memaksa jempol audiens berhenti bergerak.
+          </p>
+</div>
+<div class="text-right hidden md:block">
+<span class="font-headline-sm text-headline-sm font-mono text-primary font-extrabold">0.00s - 0.03s</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Critical Window</span>
+</div>
+</div>
+<!-- 3 Phases Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-space-3xl">
+<!-- Step 1 -->
+<div class="p-space-xl rounded-xl bg-surface-container flex flex-col gap-space-md relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-headline-md font-extrabold">
+            01
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Visual Intruder (Detik 0 - 1)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Gerakan fisik mendadak, perubahan sudut kamera makro, atau gestur teks kontras tinggi yang merusak ekspektasi monoton feed.
+            </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low font-mono text-label-sm text-primary">
+            Kode Template: #VIS-INTRUDER
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-xl rounded-xl bg-surface-container flex flex-col gap-space-md relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary font-headline-md font-extrabold">
+            02
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Emotional Anchor (Detik 1 - 2)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Menghantam titik nyeri emosional terdalam: rasa iri, takut tertinggal (FOMO), kejengkelan terhadap mitos sesat, atau rasa penasaran.
+            </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low font-mono text-label-sm text-secondary">
+            Kode Template: #EMOT-ANCHOR
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-xl rounded-xl bg-surface-container flex flex-col gap-space-md relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary font-headline-md font-extrabold">
+            03
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Open Loop Bridge (Detik 2 - 3)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Janji payoff yang menggantung. Otak manusia secara biologis menolak ketidakpastian dan akan menonton hingga akhir video.
+            </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low font-mono text-label-sm text-tertiary">
+            Kode Template: #LOOP-RESOLVE
+          </div>
+</div>
+</div>
+<!-- INTERACTIVE HOOK SIMULATOR -->
+<div class="w-full rounded-2xl bg-surface-container-high p-space-lg md:p-space-2xl relative shadow-2xl overflow-hidden" id="simulator">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-lg mb-space-lg">
+<div>
+<div class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm uppercase font-bold mb-1">
+<span class="material-symbols-outlined text-xs">tune</span> Live Hook Generator Preview
+            </div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Uji Coba Script Hook Berdasarkan Kategori Niche</h3>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Klik tab untuk mengganti skenario hook:</span>
+</div>
+<!-- Interactive Category Switcher (Pure JS Tab Handler) -->
+<div class="flex flex-wrap gap-space-xs mb-space-xl" id="hook-tabs">
+<button class="tab-btn px-space-md py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-md" id="tab-kontroversial" onclick="switchTab('kontroversial')">
+            🔥 Kategori 1: Kontroversial
+          </button>
+<button class="tab-btn px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all" id="tab-curhat" onclick="switchTab('curhat')">
+            💬 Kategori 2: Curhat &amp; Emosional
+          </button>
+<button class="tab-btn px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all" id="tab-rahasia" onclick="switchTab('rahasia')">
+            🕵️‍♂️ Kategori 3: Rahasia Industri
+          </button>
+<button class="tab-btn px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all" id="tab-fomo" onclick="switchTab('fomo')">
+            💸 Kategori 4: FOMO &amp; Cuan
+          </button>
+</div>
+<!-- Tab Content Displays -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl flex flex-col gap-space-lg">
+<div class="tab-panel flex flex-col gap-space-md" id="content-kontroversial">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Hook Script #12 (Skala Kontroversi Tinggi)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">PDF Page 4</span>
+</div>
+<div class="p-space-lg rounded-lg bg-surface-container text-on-surface">
+<p class="font-headline-md text-headline-md font-bold leading-relaxed text-primary-fixed">
+                "Berhenti dengerin tips 'posting tiap hari' dari guru konten abal-abal. Akun ini cuma posting 2x seminggu tapi bisa cetak Rp 40 juta per bulan, ini alasannya..."
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">videocam</span>
+<span class=""><strong>B-Roll Idea:</strong> Buka laptop sambil hapus kalender postingan padat.</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">psychology</span>
+<span class=""><strong>Efek Psikologis:</strong> Menyerang rasa lelah creator lalu menawarkan jalan pintas pintar.</span>
+</div>
+</div>
+</div>
+<div class="tab-panel hidden flex-col gap-space-md" id="content-curhat">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Hook Script #41 (Storytelling &amp; Vulnerability)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">PDF Page 7</span>
+</div>
+<div class="p-space-lg rounded-lg bg-surface-container text-on-surface">
+<p class="font-headline-md text-headline-md font-bold leading-relaxed text-secondary-fixed">
+                "Saya hampir nangis dan mau hapus akun Instagram ini bulan lalu karena views stuck di 200, sampai akhirnya saya nemu kesalahan kecil di 3 detik pertama..."
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">videocam</span>
+<span class=""><strong>B-Roll Idea:</strong> Kamera selfie low angle dengan tatapan letih ke layar ponsel.</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">psychology</span>
+<span class=""><strong>Efek Psikologis:</strong> Validasi rasa putus asa penonton membangun empati instan.</span>
+</div>
+</div>
+</div>
+<div class="tab-panel hidden flex-col gap-space-md" id="content-rahasia">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Hook Script #68 (Insider &amp; Agency Gap)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">PDF Page 10</span>
+</div>
+<div class="p-space-lg rounded-lg bg-surface-container text-on-surface">
+<p class="font-headline-md text-headline-md font-bold leading-relaxed text-tertiary-fixed">
+                "Orang digital agency dibayar puluhan juta buat nggak bocorin trik algoritma ini: cara bikin orang replay Reels 3x berturut-turut tanpa sadar."
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">videocam</span>
+<span class=""><strong>B-Roll Idea:</strong> Gestur mendekati mic berbisik sambil melirik kiri kanan.</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">psychology</span>
+<span class=""><strong>Efek Psikologis:</strong> Akses eksklusif ke rahasia industri elit membuat audiens merasa terpilih.</span>
+</div>
+</div>
+</div>
+<div class="tab-panel hidden flex-col gap-space-md" id="content-fomo">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Hook Script #89 (Urgent Revenue Alarm)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">PDF Page 12</span>
+</div>
+<div class="p-space-lg rounded-lg bg-surface-container text-on-surface">
+<p class="font-headline-md text-headline-md font-bold leading-relaxed text-primary-fixed">
+                "Ketinggalan update fitur baru Instagram minggu ini artinya kamu buang potensi endorse Rp 5 - 10 juta ke kompetitor kamu. Catat ini sekarang!"
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">videocam</span>
+<span class=""><strong>B-Roll Idea:</strong> Tunjukkan notifikasi transfer dana di layar bank sambil buru-buru bicara.</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">psychology</span>
+<span class=""><strong>Efek Psikologis:</strong> Loss aversion (kehilangan uang riil) mengalahkan rasa malas.</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Bar -->
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Dapatkan sisa <strong>96+ template lainnya</strong> di dalam modul PDF lengkap.</span>
+<a class="text-primary hover:underline font-bold inline-flex items-center gap-1" href="#download-box">
+              Download File PDF (4.2 MB) <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TABLE OF CONTENTS (14 HALAMAN MODUL) -->
+<section class="w-full py-space-3xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold mb-space-xs">Table of Contents</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+          Apa Saja Isi Dokumen 14 Halaman Ini?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Bukan sekadar list kata-kata. Ini adalah buku pegangan komprehensif berisi anatomi pacing, transisi visual, dan skrip siap pakai untuk reels berkonversi tinggi.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Chapter 1 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-mono text-label-sm text-primary font-bold">HALAMAN 01 - 02</span>
+<span class="material-symbols-outlined text-on-surface-variant">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Psikologi Dopamin &amp; Algoritma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Mekanisme di balik 'Swipe vs Stay' dan metrik retensi retargeting otomatis Instagram Reels 2026.
+            </p>
+</div>
+<div class="text-label-sm text-on-surface-variant font-mono">4 Formula Algoritma Utama</div>
+</div>
+<!-- Chapter 2 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-mono text-label-sm text-primary font-bold">HALAMAN 03 - 05</span>
+<span class="material-symbols-outlined text-primary">local_fire_department</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">35 Controversy &amp; Polarizing Hooks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Struktur pembakar kolom komentar yang memancing perdebatan sehat dan melipatgandakan share count video.
+            </p>
+</div>
+<div class="text-label-sm text-primary font-mono">35 Skrip Siap Copy-Paste</div>
+</div>
+<!-- Chapter 3 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-mono text-label-sm text-secondary font-bold">HALAMAN 06 - 08</span>
+<span class="material-symbols-outlined text-secondary">sentiment_satisfied</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">30 Storytelling &amp; Empathy Hooks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Teknik narasi personal vulnerabilitas untuk membangun koneksi emosional instan dan loyalitas audiens.
+            </p>
+</div>
+<div class="text-label-sm text-secondary font-mono">30 Skrip Pembangun Kepercayaan</div>
+</div>
+<!-- Chapter 4 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-mono text-label-sm text-tertiary font-bold">HALAMAN 09 - 11</span>
+<span class="material-symbols-outlined text-tertiary">lock_open</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">25 Curiosity Gap &amp; Secret Hacks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Trik membuka misteri yang memaksa audiens menahan layar dan melihat video sampai detik terakhir.
+            </p>
+</div>
+<div class="text-label-sm text-tertiary font-mono">25 Skrip High-Retention</div>
+</div>
+<!-- Chapter 5 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-mono text-label-sm text-primary font-bold">HALAMAN 12 - 13</span>
+<span class="material-symbols-outlined text-primary">touch_app</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Call-to-Action (CTA) High Conversion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Cara mengarahkan jutaan views menjadi lead biolink, download katalog, DM otomatis, atau transaksi riil.
+            </p>
+</div>
+<div class="text-label-sm text-primary font-mono">15 Skrip CTA Anti-Gagal</div>
+</div>
+<!-- Chapter 6 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-mono text-label-sm text-on-surface font-bold">HALAMAN 14</span>
+<span class="material-symbols-outlined text-on-surface">checklist</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Checklist Pra-Posting 60 Detik</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Daftar periksa cepat sebelum menekan tombol Share: font safe zone, audio trending match, dan SEO keywords.
+            </p>
+</div>
+<div class="text-label-sm text-on-surface-variant font-mono">1 Lembar Checklist Praktis</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CREATOR SHOWCASE & RESULTS -->
+<section class="w-full py-space-3xl relative">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold mb-space-xs">Real Impact</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+          Hasil Riil Kreator yang Berhenti Memulai dari Nol
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Lihat lonjakan engagement dan konversi follower dari kreator yang langsung menerapkan template ini di video mereka.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Creator 1 -->
+<div class="rounded-xl bg-surface-container p-space-xl flex flex-col justify-between gap-space-lg">
+<div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait closeup avatar of a male content creator with vibrant neon studio backlighting and glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-mfWvZDKrVRynEHOU_zVMkYTPTXcvbdQqnZlU9ZmivRQdUo3T_DGXVxHzMOYF1uB9QZVqM-XI88wsBXkVM0WCjd1Ll6Oqb7I9LXUWFwzIJEco8DckLonXH7VeiSjs3lMzwp_e9ie0fvZPGLRVepJWix3eD_20GesGJb447sIiujeQRdmmCk8cBiDr_w586UdXorGbR8LjOwzR-PT3FAApG3sEAsFk8u0AEARfu6Os">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Rian Darmawan</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tech &amp; Productivity Creator (@riandev)</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Sebelumnya views saya konsisten mandek di 500-an. Pas pakai template hook kategori 'Rahasia Industri' di halaman 10, video pertama tembus 1.8 juta views dan nambah 24k follower cuma dalam 4 hari."
+            </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Pertumbuhan:</span>
+<span class="text-tertiary font-bold">+24,800 Followers</span>
+</div>
+</div>
+<!-- Creator 2 -->
+<div class="rounded-xl bg-surface-container p-space-xl flex flex-col justify-between gap-space-lg">
+<div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of an energetic female digital marketer holding a smartphone in modern dark creative studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI7F6zhkYKrDr8nv1BbWMU35T107LFE00lQlQ2B3TpMKf93QUNQa9-SkhMXykVJM3kIgBlJZh6DxZVyQNYLnAmoabs81PdZvsOg_pM4AlysMtW5iqTEbrzwlAIR8-qRi4_O-ikkca9e6yp1kx8E4sUOliqwWfhRlo6SFdsjP0SGaE7403S0LQflUr3KZVY0bS-iqWAvq2C6LZdcHiLhTOjw5kT7eiBrMhYHp_CueBV">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Nadira Alika</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Fashion &amp; Thrifting Solopreneur (@nadira.style)</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Formula hook FOMO ini bener-bener gila. Penonton nggak cuma nonton sampai habis tapi langsung serbu keranjang etalase karena ngerasa bakal kehabisan barang. Omset naik 3x lipat!"
+            </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Engagement:</span>
+<span class="text-primary font-bold">3.2M Total Plays</span>
+</div>
+</div>
+<!-- Creator 3 -->
+<div class="rounded-xl bg-surface-container p-space-xl flex flex-col justify-between gap-space-lg">
+<div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of an Indonesian tech influencer smiling with warm cyberpunk ambient rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwlitsrFfunaCOAFBAil4kWWUHlutVv3LhlSnIIar45HwhH7ijpYYE8-X6ilXDdOalAXuO_cjW4DCUMi1kOaDlR15Nec-VtWYWZXYrb-ARysQWDz4NspcrcIYQcCIJ5DRO86_OppIzi8RpHHXolDUtUfe6RFJR40y7l6hA2X-8iwvbobUryh13-PVeEpHubbHXbhIMZz9m_-a34czvxAw_FX6_t4hjK4QM8l1-2kMm">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bagas Wicaksono</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Personal Finance Educator (@bagasduit)</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+              "Checklist pra-posting di halaman 14 adalah penyelamat waktu. Sekarang tim saya nggak butuh waktu berjam-jam mikirin kalimat pembuka video. Tinggal pilih nomor template, rekam, beres."
+            </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">Efisiensi Tim:</span>
+<span class="text-secondary font-bold">Produksi 4x Lebih Cepat</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INSTANT ACCESS & DOWNLOAD BOX -->
+<section class="w-full py-space-3xl relative" id="download-box">
+<div class="max-w-5xl mx-auto px-margin">
+<div class="rounded-2xl bg-surface-container-high p-space-xl md:p-space-3xl relative overflow-hidden shadow-2xl">
+<!-- Glow Overlay -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold w-fit">
+<span class="material-symbols-outlined text-sm">lock_open</span> AKSES GRATIS • INSTANT DOWNLOAD
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+              Ambil Vault 100+ Template Hook Reels Sekarang
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Dokumen PDF siap pakai (4.2 MB) langsung tersimpan di perangkat Anda. Termasuk lisensi bebas pakai untuk akun personal, brand, maupun kebutuhan klien agensi Anda.
+            </p>
+<!-- Specification Badges -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-space-xs font-label-sm text-label-sm text-on-surface">
+<div class="p-space-xs rounded bg-surface-container-lowest flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">description</span>
+<span class="">PDF 14 Halaman</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">hard_drive</span>
+<span class="">Ukuran: 4.2 MB</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-lowest flex items-center gap-1.5 col-span-2 sm:col-span-1">
+<span class="material-symbols-outlined text-tertiary text-sm">license</span>
+<span class="">Free Lisensi Pro</span>
+</div>
+</div>
+</div>
+<!-- Download Action Area -->
+<div class="lg:col-span-5 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-inner">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Status Aset</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Siap Diunduh
+              </span>
+</div>
+<!-- Single Click Fast Form -->
+<div class="flex flex-col gap-space-sm" id="download-form-container">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1" for="creator-name">Nama Kreator / Brand</label>
+<input class="w-full px-space-md py-space-sm rounded bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:ring-0" id="creator-name" placeholder="Misal: Alex Pratama" type="text">
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1" for="creator-email">Email untuk Pengiriman Link Mirror</label>
+<input class="w-full px-space-md py-space-sm rounded bg-surface-container text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:ring-0" id="creator-email" placeholder="nama@gmail.com" type="email">
+</div>
+<button class="w-full mt-space-xs py-space-md px-space-lg rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs hover:bg-primary transition-all shadow-[0_10px_25px_-5px_rgba(255,79,115,0.4)]" id="btn-download" onclick="handleDownloadSubmit()">
+<span class="material-symbols-outlined">download</span>
+<span class="">Download PDF (4.2 MB) Gratis</span>
+</button>
+</div>
+<!-- Instant Feedback Alert Box (Hidden by default) -->
+<div class="hidden flex-col items-center text-center gap-space-xs py-space-md bg-tertiary-container/20 rounded p-space-md" id="download-success">
+<span class="material-symbols-outlined text-tertiary text-3xl">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Download Berhasil Dimulai!</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                File <code class="text-primary font-mono">100_Hook_Reels_FOMO.pdf</code> sedang diunduh ke folder perangkat Anda.
+              </p>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center">
+              100% Gratis. Tanpa perlu kartu kredit.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ ACCORDION -->
+<section class="w-full py-space-3xl bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto px-margin">
+<div class="flex flex-col items-center text-center mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold mb-space-xs">Help &amp; FAQ</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+          Pertanyaan yang Sering Diajukan
+        </h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- FAQ Item 1 -->
+<div class="rounded-xl bg-surface-container p-space-lg cursor-pointer" onclick="toggleFaq('faq-1')">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Apakah template ini hanya cocok untuk Instagram Reels?
+            </h4>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform" id="icon-faq-1" style="transform: rotate(0deg);">expand_more</span>
+</div>
+<div class="pt-space-md text-on-surface-variant font-body-md text-body-md hidden" id="faq-1">
+            Tidak. Meskipun dioptimalkan untuk rasio retensi algoritma Instagram Reels 2026, struktur 3 detik pertama ini sama efektifnya ketika dipakai untuk <strong>TikTok, YouTube Shorts, dan Facebook Reels</strong> karena psikologi dasar rentang perhatian manusia berlaku identik di semua platform vertikal.
+          </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="rounded-xl bg-surface-container p-space-lg cursor-pointer" onclick="toggleFaq('faq-2')">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Bagaimana jika niche konten saya sangat teknis atau edukasi kaku?
+            </h4>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform" id="icon-faq-2" style="transform: rotate(0deg);">expand_more</span>
+</div>
+<div class="pt-space-md text-on-surface-variant font-body-md text-body-md hidden" id="faq-2">
+            Justru di niche teknis (seperti pemrograman, pajak, hukum, medis, atau b2b sales) hook ini memberikan dampak paling besar. Niche kaku sering kali membosankan di detik awal; dengan menyuntikkan template 'Curiosity Gap' atau 'Kontroversial Rahasia', konten Anda akan langsung menonjol dibanding 99% pesaing Anda.
+          </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="rounded-xl bg-surface-container p-space-lg cursor-pointer" onclick="toggleFaq('faq-3')">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Apakah benar-benar 100% gratis dan boleh dipakai komersial?
+            </h4>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform" id="icon-faq-3">expand_more</span>
+</div>
+<div class="hidden pt-space-md text-on-surface-variant font-body-md text-body-md" id="faq-3">
+            Ya! Ebook dan template ini diterbitkan di bawah lisensi Obsidian Studio Creator License: bebas dipakai untuk akun pribadi, akun bisnis jualan, maupun untuk memproduksi konten klien agensi tanpa royalti sepeser pun.
+          </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="rounded-xl bg-surface-container p-space-lg cursor-pointer" onclick="toggleFaq('faq-4')">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              Bagaimana cara mengaplikasikan skrip ini dengan editing CapCut?
+            </h4>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform" id="icon-faq-4">expand_more</span>
+</div>
+<div class="hidden pt-space-md text-on-surface-variant font-body-md text-body-md" id="faq-4">
+            Di halaman 14 terdapat panduan safe zone teks dan pacing timing suara. Anda cukup menyalin kalimat teks hook ke layer teks CapCut, beri animasi 'Typewriter' atau teks pop-up merah/kuning pada detik 0:00 - 0:02, lalu sambungkan dengan visual B-roll sesuai arahan template.
+          </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Tab Switcher for Hook Simulator
+  function switchTab(category) {
+    const tabs = ['kontroversial', 'curhat', 'rahasia', 'fomo'];
+    tabs.forEach(t => {
+      const panel = document.getElementById('content-' + t);
+      const btn = document.getElementById('tab-' + t);
+      if (t === category) {
+        panel.classList.remove('hidden');
+        panel.classList.add('flex');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-md');
+      } else {
+        panel.classList.add('hidden');
+        panel.classList.remove('flex');
+        btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-md');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    });
+  }
+
+  // FAQ Toggle Accordion
+  function toggleFaq(id) {
+    const element = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    if (element.classList.contains('hidden')) {
+      element.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      element.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Download Trigger Feedback
+  function handleDownloadSubmit() {
+    const form = document.getElementById('download-form-container');
+    const success = document.getElementById('download-success');
+    
+    // Simulate swift instant download trigger
+    form.classList.add('opacity-50', 'pointer-events-none');
+    setTimeout(() => {
+      form.classList.add('hidden');
+      success.classList.remove('hidden');
+      success.classList.add('flex');
+    }, 450);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-3xl"><div class="max-w-7xl mx-auto px-margin py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="fajarcreative logo" class="w-8 h-8 rounded-full object-cover overflow-hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7asMzO4Jp5ACpnIRihYm3y2-oXOxSZaxID_P_E4a_5X_iCzInCUVsrblH0nM8wlzYMQ1YHsZrbpJ-B27R_rcIx1UeXbc7PEEunA24p5RArVE1viUKdta4KvMRafjiGTOHJe1LouJtaH4-dYaWg3aXrri4ndiofl2N7iBSXegfpWD0tx72tm7AxDdPVdqYYIZ1C89O7C7im2787eLUalKNsuKCFyDFx9MGlIsheWoCbmrooZ0iMif4yQ"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">fajarcreative</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Toolkit esensial dan suite otomasi berkonversi tinggi untuk kreator konten, influencer, dan solopreneur digital Indonesia.</p><div class="flex items-center gap-space-sm mt-space-sm"><span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-tertiary-fixed">Verified Creator Hub</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Koleksi Toolkit</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="hook-reels-fomo" href="#">100+ Template Hook Viral Reels</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="audit-bio-ig" href="#">Checklist Audit Bio Instagram Pro</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pitch-brand-rate-card" href="#">Template Media Kit &amp; Sponsorship Pitch</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="kalkulator-cuan" href="#">Spreadsheet Kalkulator Cuan Kreator</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Komunitas Kreator</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Telegram Creator Circle</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Weekly Live Breakdown</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Sponsorship Deal Board</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Newsletter Insight Mingguan</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Legal &amp; Bantuan</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Lisensi &amp; Penggunaan Aset</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Kebijakan Privasi</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Ketentuan Layanan</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Hubungi Tim Support</a><a class="font-body-sm text-body-sm text-tertiary hover:underline transition-colors flex items-center gap-1 mt-1" href="https://wa.me/6282338903403" target="_blank"><span class="material-symbols-outlined text-sm">chat</span><span class="">WhatsApp: 082338903403</span></a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 fajarcreative. Seluruh hak cipta dilindungi. • WA: 082338903403</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant">Obsidian Studio Suite Standard</span><span class="font-label-sm text-label-sm text-primary-fixed-dim">ID Edition</span></div></div></div></footer>
+
+
+
+</body></html>

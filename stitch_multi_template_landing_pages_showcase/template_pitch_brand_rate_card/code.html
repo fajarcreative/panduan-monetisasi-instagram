@@ -1,0 +1,739 @@
+<!DOCTYPE html><html class="dark" lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#002113", "background": "#121317", "outline-variant": "#5c3f42", "primary-container": "#ff4f73", "surface-container": "#1f1f24", "surface-container-low": "#1a1b20", "surface-bright": "#38393e", "on-background": "#e3e2e8", "on-secondary": "#3c0091", "error-container": "#93000a", "surface-container-lowest": "#0d0e12", "primary-fixed-dim": "#ffb2ba", "tertiary-fixed-dim": "#4edea3", "surface-container-high": "#292a2e", "secondary-fixed": "#e9ddff", "on-primary": "#670020", "tertiary": "#4edea3", "on-primary-fixed-variant": "#910030", "surface-dim": "#121317", "on-primary-container": "#5a001b", "primary-fixed": "#ffd9dc", "inverse-primary": "#bd0042", "on-secondary-fixed": "#23005c", "on-surface": "#e3e2e8", "on-primary-fixed": "#400011", "primary": "#ffb2ba", "surface-variant": "#343439", "secondary": "#d0bcff", "on-tertiary": "#003824", "on-surface-variant": "#e5bdc0", "outline": "#ac888b", "inverse-on-surface": "#2f3035", "surface": "#121317", "on-secondary-container": "#c4abff", "secondary-container": "#571bc1", "surface-tint": "#ffb2ba", "on-tertiary-container": "#00311f", "error": "#ffb4ab", "secondary-fixed-dim": "#d0bcff", "inverse-surface": "#e3e2e8", "surface-container-highest": "#343439", "tertiary-fixed": "#6ffbbe", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "on-error": "#690005", "on-secondary-fixed-variant": "#5516be", "tertiary-container": "#00a572" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "2rem", "space-2xl": "4rem", "space-3xl": "6rem" }, "fontFamily": { "body-md": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display-xl-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-xl-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)] border-b border-surface-container-high">
+<div class="h-20 max-w-7xl mx-auto px-3 sm:px-margin flex items-center justify-between gap-2 sm:gap-gutter">
+<a href="../../roadmap_utama_step_by_step_cuan_instagram/code.html" class="flex items-center gap-2 sm:gap-space-md shrink-0 hover:opacity-90 transition-opacity">
+<img alt="fajarcreative logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover overflow-hidden ring-2 ring-primary-container/20 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBro0SNaSR4_J6183-Pp-obBr0O-PVi5hj8APnOjNq5H_i771RLLSnjZ4XTkF6xQMgzQUMAJ1wm9ymoJ8pBmPFCT_9CnTP37wz0S_kVYW9t-Jda-pj3g1zly_UDsz8QzZI9tT11X37LXLn0zN1xjdhkq4agh5FE-LAjTAqQDpmklTKnTRH1QKayX_7WCPl2APpX8oQe1pBPnpkkVFb6_Fssi6i3hXp2bMWB2KJocLi6-EHDEP8Z_6wmWw">
+<div class="hidden sm:flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">fajarcreative</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Template Premium</span>
+</div>
+</a>
+
+<nav class="flex items-center gap-1 sm:gap-space-xs overflow-x-auto py-1 max-w-[55vw] sm:max-w-none">
+<a class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-surface-container-high text-on-surface hover:text-primary transition-colors flex items-center gap-1" href="../../roadmap_utama_step_by_step_cuan_instagram/code.html">
+<span class="material-symbols-outlined text-[15px]">arrow_back</span>
+<span class="hidden md:inline">Roadmap Utama</span>
+</a>
+<a class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-surface-container-high text-on-surface hover:text-primary transition-colors flex items-center gap-1" href="../../template_premium/code.html">
+<span class="material-symbols-outlined text-[15px]">grid_view</span>
+<span class="hidden md:inline">Semua Template</span>
+</a>
+<a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../100_template_hook_reels_bikin_fomo/code.html">⚡ Hook Reels</a><a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../checklist_audit_bio_instagram_pro/code.html">🔍 Audit Bio</a><a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../kalkulator_cuan_spreadsheet/code.html">📊 Spreadsheet</a><a aria-current="page" class="px-2.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap bg-primary-container text-on-primary-container shadow-md" href="../template_pitch_brand_rate_card/code.html">💼 Rate Card</a>
+</nav>
+
+<div class="flex items-center gap-2 shrink-0">
+<a href="https://wa.me/6282338903403" target="_blank" class="inline-flex items-center gap-1 px-2.5 sm:px-space-md py-1.5 sm:py-space-xs rounded-full bg-surface-container text-tertiary hover:text-tertiary-fixed text-xs font-semibold transition-colors">
+<span class="material-symbols-outlined text-base">chat</span>
+<span class="hidden lg:inline">WA: 082338903403</span>
+</a>
+</div>
+</div>
+</header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[340px] bg-secondary-container/25 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="absolute top-96 right-10 w-[420px] h-[420px] bg-secondary/10 blur-[130px] rounded-full pointer-events-none"></div>
+<div class="absolute top-[1600px] left-0 w-[480px] h-[480px] bg-tertiary-container/15 blur-[140px] rounded-full pointer-events-none"></div>
+<!-- 1. Hero Section -->
+<section class="relative max-w-7xl mx-auto px-margin pt-space-xl pb-space-3xl flex flex-col items-center text-center">
+<!-- Badge Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container/40 text-secondary mb-space-lg shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">work</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">TEMPLATE SPONSORSHIP RESMI • DOCS &amp; CANVA</span>
+</div>
+<!-- Main Headline -->
+<h1 class="max-w-5xl font-display-xl text-display-xl tracking-tight text-on-surface mb-space-md">
+        Template Pitch Brand &amp; Rate Card: Dapatkan Endorsement &amp; Deal Brand Bernilai Jutaan
+      </h1>
+<!-- Subhead -->
+<p class="max-w-3xl font-body-lg text-body-lg text-on-surface-variant mb-space-xl">
+        Format email penawaran sponsor ke brand manager, klausul hak cipta (<span class="text-on-surface font-medium">usage rights</span>), struktur rate card profesional, dan template presentasi media kit Canva yang siap diedit dalam hitungan menit.
+      </p>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md mb-space-2xl w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-full bg-secondary-container text-secondary-fixed hover:bg-secondary hover:text-on-secondary font-label-lg text-label-lg transition-all shadow-[0_12px_32px_-4px_rgba(87,27,193,0.45)] hover:-translate-y-0.5" href="#download-section">
+<span class="material-symbols-outlined text-base">download</span>
+<span class="">Dapatkan Akses Template (Canva &amp; Docs)</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-full bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all font-label-lg text-label-lg" href="#email-preview">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span class="">Intip Format Email Pitch</span>
+</a>
+</div>
+<!-- Trust Social Proof -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md p-space-md rounded-2xl bg-surface-container-low/70 backdrop-blur-md mb-space-2xl">
+<div class="flex items-center -space-x-3">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait photo of a young Indonesian female lifestyle creator in studio lighting with a warm confident smile, editorial high resolution" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANhJjqMjSQZQPLHyr3RKWQIGEktrzQ7E5-7mKhBRAGX7Rzm7xHP5yk7ybYBZooJmZ-wmvmvMzftKv3fr10k8Jto-WHKfWdjviJ2E62EXkkQSUe9RGO9vz7rLvhrS2cK47-zeXW5bCNJdS5QqWqNfTTmbcJ_QzksK6X4_hbNVJoWPUejoKN7aFbDOHrEHU-hTmkolismnjE1_ixMN8yEBzvDt46qQn4vMVxkvpSrpaN">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait photo of an Indonesian male tech reviewer creator wearing modern black turtleneck and sleek glasses, neon purple studio rim light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFPjbhRYWpO5PxJsTcu3rR1Ig_TqNX2Nbh8tGh1TnLD1jrLhLmw0B8s9zSDaeTM5TQR-4kQCdsoafY6yWGQ8iCcn3M39p4LEOOY6Yabi_2FSniSM2aoXQXLLbnMoXTOZTrKpynfrasegGzEEQ5tmJa4rWbC8xoEGY31OBdUIV-wFfwJ1d3pRbp21qzr4HxtZbpoS0wsU7SWgv00TFGl2LmbqIK0CqQWPZdXM3Hi2nR">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait photo of a creative female beauty influencer in Jakarta holding camera gear, stylish minimalist portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAjEHwilcHhG9Zg5wN2vBb_Oy56pXsa-Piuskkr8oeqFmf7Is9TG8CglQt707VeAh-pDDrbfZtiZ-EEg-PGx7jt63Y6VpNRYZH8butkSnAKTtKYIKfV9drG4TKQ7IJgofxzq71yCRMWzQiEyMSI3S0pN3P8mHg9eR5wm5WGvdBZRZA9fFN9l-DFhzh_VD_jTVCO7cW8dxrDoO_uPyBLlyIPBxPjtfWGv0UCCnri6I9">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-secondary-fixed flex items-center justify-center font-label-sm text-label-sm font-bold">
+            +8k
+          </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">
+          Dipakai oleh <span class="text-on-surface font-semibold text-secondary-fixed">8,200+ kreator</span> untuk closing deal dengan brand FMCG, Tech, dan Fashion ternama.
+        </p>
+</div>
+<!-- Visual Showcase Mockup -->
+<div class="w-full relative max-w-5xl group">
+<div class="absolute -inset-1 bg-gradient-to-r from-secondary-container/40 via-secondary/20 to-tertiary-container/30 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700"></div>
+<div class="relative bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl p-space-sm sm:p-space-lg">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-none bg-surface-container-low px-space-md py-space-xs rounded-xl">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-surface-bright"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-space-sm">CreatorVault_Official_MediaKit_RateCard_2025.canva</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded bg-secondary-container/60 text-secondary-fixed font-semibold">10 Halaman Canva Pro Ready</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<!-- Left Mockup Canvas Image -->
+<div class="lg:col-span-8 overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-80 sm:h-96 object-cover object-top hover:scale-[1.02] transition-transform duration-500" data-alt="A modern laptop on a creative agency desk displaying a sleek media kit and rate card design in royal purple dark theme, showing analytics graphs, engagement rate metrics, creator photo, and sponsorship tiers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIsq5TceaddBSBQz3dfZB9fJvqkULUuBhtYcZwu05jIcvjkNLiR8ZDBtUU-NzIrP2fKHiKAdmvnPKMQaaFuR769C6xMaWnKPIR0m73DNiDPu-yUL08HEHISLvjI6XHIwhwuG-OskceyzBQBJCmpMUQWDpWxeFOlU6Ue1HrpbGb2nxXaC3gi81UfBDe5c75zLob6NhDPfkYIqGQMXZVE-W_eiF3kL2r3ctTFilDFzt3">
+</div>
+<!-- Right Interactive Highlights -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm text-left">
+<div class="p-space-md rounded-xl bg-surface-container-high/80">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Halaman 1 - 3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-1">Brand Intro &amp; Demografi</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Metrik terverifikasi: Engagement Rate 4.8%, top audience gender 68% F, umur 18-34 Jakarta &amp; Surabaya.</p>
+</div>
+<div class="p-space-md rounded-xl bg-secondary-container/30">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-bold tracking-wider">Halaman 4 - 7</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold">Auto Formula</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-1">Rate Card &amp; Paket Bundling</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tabel paket Reels + Story + Link bio dengan opsi klausul lisensi digital ads 30/60/90 hari.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high/80">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Halaman 8 - 10</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-1">Terms of Service &amp; Invoice</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Syarat DP 50%, batas maksimal 2x revisi minor, no raw footage release tanpa biaya lisensi.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Mengapa Pitch Sering Ditolak Brand Manager? -->
+<section class="max-w-7xl mx-auto px-margin py-space-3xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-2xl">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-error font-semibold">Anatomi Kegagalan Pitching</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
+            Mengapa 9 dari 10 Email Pitch Kreator Berakhir di Tempat Sampah Brand Manager?
+          </h2>
+</div>
+<p class="max-w-md font-body-md text-body-md text-on-surface-variant">
+          Brand Manager menerima puluhan DM dan email setiap hari. Tanpa format terstruktur dan bahasa bisnis yang tepat, pitch Anda hanya dianggap spam.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Mistake 1 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors shadow-md">
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container/40 text-error flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">mail_lock</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-bold uppercase tracking-wider">Fatal Mistake #1</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs mb-space-sm">Pitch Tanpa Data Relevan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Hanya kirim kalimat klise: <em class="text-on-surface font-serif">"Halo kak, mau ajak collab endorsement"</em> tanpa melampirkan profil audiens yang selaras dengan produk brand. Brand tidak tahu apa keuntungannya bagi mereka.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container rounded-xl p-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-tertiary font-semibold block">Solusi Template:</span>
+            Subjek email spesifik + 1-kalimat proposal solusi kampanye berdasarkan data tren terbaru.
+          </div>
+</div>
+<!-- Mistake 2 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors shadow-md">
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container/40 text-error flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">price_change</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-bold uppercase tracking-wider">Fatal Mistake #2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs mb-space-sm">Rate Card 'Kucing Dalam Karung'</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Kirim daftar harga teks biasa di chat tanpa batasan hak cipta (<span class="text-on-surface">usage rights</span>). Brand akhirnya menggunakan video Anda sebagai iklan TikTok Ads berbayar berbulan-bulan tanpa bayar ekstra.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container rounded-xl p-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-tertiary font-semibold block">Solusi Template:</span>
+            Pemisahan jelas antara Organic Posting Rate vs Commercial Ad Usage Rights 30-90 hari.
+          </div>
+</div>
+<!-- Mistake 3 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors shadow-md">
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container/40 text-error flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">contract_delete</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-bold uppercase tracking-wider">Fatal Mistake #3</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs mb-space-sm">Nol Proteksi &amp; Revisi Unlimited</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tidak ada kesepakatan tertulis mengenai DP, batas hari tayang, dan limit revisi video. Hasilnya kreator diperas revisi script berkali-kali hingga invoice molor 90 hari setelah tayang.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container rounded-xl p-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-tertiary font-semibold block">Solusi Template:</span>
+            Draft kontrak 2 lembar siap tanda tangan digital dengan klausul DP 50% di muka.
+          </div>
+</div>
+</div>
+</section>
+<!-- 3. Core Assets Inside the Bundle -->
+<section class="max-w-7xl mx-auto px-margin py-space-2xl">
+<div class="text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Isi Lengkap Paket</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs mb-space-sm">
+          4 Senjata Utama untuk Negosiasi Deal Bernilai Tinggi
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Semua file dirancang langsung dalam format cloud (Google Docs &amp; Canva) sehingga Anda bisa menyalin, mengubah logo, dan langsung mengirimkannya ke klien hari ini juga.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Asset 1 -->
+<div class="p-space-xl rounded-3xl bg-surface-container flex flex-col justify-between shadow-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-1 rounded bg-secondary-container/50 text-secondary-fixed font-label-sm text-label-sm font-semibold">ASSET 01 • GOOGLE DOCS</span>
+<span class="material-symbols-outlined text-secondary">outgoing_mail</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">5 Format Script Cold Pitch &amp; Follow-up</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Template email penawaran resmi dengan conversion hook tinggi ke PR Agency dan Brand Manager. Menggunakan struktur PAS (Problem-Agitate-Solution).
+            </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-lg">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Template Pitch Brand FMCG / Retail Lokal</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Template Pitch Global / Tech Brand (English Professional)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Template Pitch ke Digital Agency &amp; Media Buyer</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Template Follow-up Sopan H+3 &amp; H+7 tanpa kesan mengemis</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Format: .docx &amp; Notion</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Tinggal Isi Titik-Titik</span>
+</div>
+</div>
+<!-- Asset 2 -->
+<div class="p-space-xl rounded-3xl bg-surface-container flex flex-col justify-between shadow-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/20 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-1 rounded bg-secondary-container/50 text-secondary-fixed font-label-sm text-label-sm font-semibold">ASSET 02 • CANVA TEMPLATE</span>
+<span class="material-symbols-outlined text-secondary">palette</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">10 Halaman Media Kit &amp; Rate Card Canva Pro</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Desain presentasi kelas agensi internasional. Menggunakan grid tipografi modern, kartu paket harga bergradasi, dan mockup preview reels.
+            </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-lg">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Halaman Visual Persona &amp; Niche Positioning</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Infografis Demographic &amp; Geolocation Audience</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Struktur Tier Pricing (Bronze, Silver, Gold Bundle)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Case Study &amp; Previous Clients Proof Showcase</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Format: Link Template Canva</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">100% Bisa Diubah Font &amp; Warna</span>
+</div>
+</div>
+<!-- Asset 3 -->
+<div class="p-space-xl rounded-3xl bg-surface-container flex flex-col justify-between shadow-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-1 rounded bg-secondary-container/50 text-secondary-fixed font-label-sm text-label-sm font-semibold">ASSET 03 • LEGAL DOCS</span>
+<span class="material-symbols-outlined text-secondary">gavel</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">Draft Kontrak SPK &amp; Klausul Hak Cipta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Surat Perjanjian Kerja (SPK) ringkas yang melindungi kreator dari eksploitasi materi, hak cipta tanpa batas, dan tagihan invoice yang macet.
+            </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-lg">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Klausul Kepemilikan Hak Cipta &amp; Lisensi Iklan Terbatas</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Kebijakan Pembayaran DP 50% Sebelum Produksi Dimulai</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Aturan Pembatasan Maksimal 2x Revisi Minor Storyboard</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Denda Keterlambatan Pembayaran Pelunasan H+14</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Format: Google Docs &amp; PDF</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Standard Hukum Perdata ID</span>
+</div>
+</div>
+<!-- Asset 4 -->
+<div class="p-space-xl rounded-3xl bg-surface-container flex flex-col justify-between shadow-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-sm py-1 rounded bg-secondary-container/50 text-secondary-fixed font-label-sm text-label-sm font-semibold">ASSET 04 • FORMULA SHEET</span>
+<span class="material-symbols-outlined text-secondary">calculate</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-sm">Kalkulator Patokan Harga Endorse Realistis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Hilangkan rasa ragu saat pasang tarif. Formula spreadsheet untuk menentukan base rate Instagram Story, Reels, TikTok video, dan paket bundling.
+            </p>
+<ul class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-lg">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Formula CPM &amp; Median Views (Bukan Sekadar Followers)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Multiplier Pengganda untuk Niche B2B, Finance, &amp; Tech</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Kalkulasi Biaya Whitelisting / Spark Ads bulanan</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span class="">Tabel Margin Minimum untuk Kolaborasi Barter Produk</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Format: Google Sheets</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Auto Calculate</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Interactive Preview Media Kit & Rate Card Layout -->
+<section class="max-w-7xl mx-auto px-margin py-space-3xl" id="preview-section">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg mb-space-2xl">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Preview Visual Eksklusif</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
+            Desain Mewah yang Membedakan Anda dari Kreator Amatir
+          </h2>
+</div>
+<p class="max-w-md font-body-md text-body-md text-on-surface-variant">
+          Pilih slide di bawah untuk melihat preview struktur layout halaman yang akan langsung Anda dapatkan di Canva.
+        </p>
+</div>
+<!-- Tab Buttons -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-sm mb-space-xl" id="tab-container">
+<button class="tab-btn px-space-md py-space-xs rounded-full bg-secondary-container text-secondary-fixed font-label-md text-label-md whitespace-nowrap" id="tab-btn-0" onclick="switchPreview(0)">
+          1. Cover &amp; Bio
+        </button>
+<button class="tab-btn px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface whitespace-nowrap" id="tab-btn-1" onclick="switchPreview(1)">
+          2. Audiens &amp; Metrik
+        </button>
+<button class="tab-btn px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface whitespace-nowrap" id="tab-btn-2" onclick="switchPreview(2)">
+          3. Rate Card Tiers
+        </button>
+<button class="tab-btn px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface whitespace-nowrap" id="tab-btn-3" onclick="switchPreview(3)">
+          4. Case Study &amp; Klien
+        </button>
+<button class="tab-btn px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface whitespace-nowrap" id="tab-btn-4" onclick="switchPreview(4)">
+          5. Syarat &amp; Ketentuan
+        </button>
+</div>
+<!-- Preview Card Canvas -->
+<div class="relative bg-surface-container-low rounded-3xl p-space-lg md:p-space-2xl shadow-xl min-h-[480px] flex items-center justify-center">
+<!-- Slide 0 -->
+<div class="preview-slide w-full grid grid-cols-1 md:grid-cols-12 gap-space-xl items-center" id="slide-0">
+<div class="md:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Halaman 01 &amp; 02</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">The Luxury Agency Cover &amp; Executive Summary</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tampilan awal yang elegan dengan tipografi monospaced minimalis, foto high-res persona kreator, highlight pilar konten (misal: Finansial, Teknologi, Lifestyle), serta pernyataan misi yang berfokus pada hasil penjualan brand.
+            </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-secondary-fixed font-label-sm text-label-sm">Drag &amp; Drop Foto</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Custom Color Palettes</span>
+</div>
+</div>
+<div class="md:col-span-6 rounded-2xl overflow-hidden bg-surface-container shadow-2xl">
+<img class="w-full h-80 object-cover" data-alt="Close up aesthetic mockup of the cover page of an influencer media kit in Canva with minimalist modern layout in deep violet obsidian colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBAih64wTQ_0JQ__UTn9SkH4uqK6Cverzu5p_gZuF-mohIOeB6xH29TVvnQzRGtIb4S8tauNaz7LaBkNJtuDWTup4G6TrTtr19NZMI1Nb67SdC6R7rFvHFl6NY8dtyJvix0RaP5VgD5k88UZ2c40i40BSIgKE28fNJ2rzWvcxcg7Pq6dOaZvMs6pzwuZEf5neEWIQz9QDQOaNXfeNQ3GqyeYEcNk0QMETeemuoghGo">
+</div>
+</div>
+<!-- Slide 1 -->
+<div class="preview-slide hidden w-full grid grid-cols-1 md:grid-cols-12 gap-space-xl items-center" id="slide-1">
+<div class="md:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Halaman 03 &amp; 04</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Data Demografi &amp; Retensi Audiens</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bagan grafis siap pakai untuk menunjukkan persentase kota teratas pengikut Anda, rentang usia paling aktif, gender ratio, hingga rata-rata views 30 hari terakhir. Brand Manager langsung bisa memverifikasi kecocokan target pasar.
+            </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-secondary-fixed font-label-sm text-label-sm">Canva Editable Charts</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Screenshot Insight Slot</span>
+</div>
+</div>
+<div class="md:col-span-6 rounded-2xl overflow-hidden bg-surface-container shadow-2xl">
+<img class="w-full h-80 object-cover" data-alt="A modern infographic analytics page from a media kit showcasing audience demographics, gender ratio pie charts, and monthly reach metrics in dark purple aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3q0_Hxhf_BlOuDMgWfE-skR11iyE-3XbA7SkvpsUcD-zcYDHgANH9cVufZ_spqr7-IIxBROxPwimtM_no6X9HLXmWv3haLZyRpxaMXIpJZ6YXTxpNQS3lGJsIQ1hBs-ZuWiKVZvP7fq54Lv1IAKBUqgvie6rG5rOYJr2yCaf2tncaAiYLwjcZixtCghfPRnu41N4JL9sM_Tq6U-FR2av1Wl9n_m2Ndw-leVWTvfo4">
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="preview-slide hidden w-full grid grid-cols-1 md:grid-cols-12 gap-space-xl items-center" id="slide-2">
+<div class="md:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Halaman 05 &amp; 06</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Rate Card Berstruktur 3-Tier Packages</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Pilihan paket yang mengarahkan brand memilih opsi bundling bernilai tertinggi (The Anchor Effect): Paket Starter (1x Story), Paket Growth (1x Reels + Link bio), dan Paket Dominance (Reels, Story, Feed Carousel + Ads Whitelist).
+            </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-secondary-fixed font-label-sm text-label-sm">High-Converting Tiering</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Add-on Addendum</span>
+</div>
+</div>
+<div class="md:col-span-6 rounded-2xl overflow-hidden bg-surface-container shadow-2xl">
+<img class="w-full h-80 object-cover" data-alt="A pricing rate card page showing three stylish tiers with dark luxury styling, clear rupiah pricing, feature lists, and recommended banner tags" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR02HvsPrI_mKeA83fWxDObGRadYDTDV1kiKaEaKhheznORDivGE-n4uYz0PXRtwNhcW3f5y5hXefh8jCG-froN2eNNfMfheRtJ9alXoOf3-0fKRKNy-RS-6Z-_F8BtI0P6-qzvsjcNgKKmy0lBb3_ZMELg3IeC3xqCp0PHWFhvSTqF---m5PnMlHLY9uLZmeCiPLYWXkTLmrCHGgQd0vVft8FPdbQHMrreXg5vgz-">
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="preview-slide hidden w-full grid grid-cols-1 md:grid-cols-12 gap-space-xl items-center" id="slide-3">
+<div class="md:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Halaman 07 &amp; 08</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Case Study Kampanye Terdahulu</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bukti nyata kampanye sebelumnya: Tampilkan metrik klik link bio, peningkatan follower brand klien, atau total views Reels kolaborasi. Ini adalah halaman penentu yang membuat brand yakin membayar mahal.
+            </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-secondary-fixed font-label-sm text-label-sm">Client Logo Wall</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Testimonial Quote Box</span>
+</div>
+</div>
+<div class="md:col-span-6 rounded-2xl overflow-hidden bg-surface-container shadow-2xl">
+<img class="w-full h-80 object-cover" data-alt="Portfolio case study page in a creator media kit displaying campaign analytics, phone frame previewing a viral reel, and client testimonial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx17HmZjprb8KEUSGmLM6MjG8ZabzYeKk_SPNmrgNe-qMcCSyoSr1RNrl0qRJzkyyEYwzXWjEdNJCKSI8HoY9OrBhIf4Th-HZGj8gCaw-jrNMWPkJEoCQkUiUzoZJfipEEUB_g6cmph_leYAqhC6pO9oyT9iDrvLl0brugoasV7z6v4dRDiAW_uIpKbggO9qhVQanEpZqOmZLDIBctRFEer112Od6U0JThias70rF3">
+</div>
+</div>
+<!-- Slide 4 -->
+<div class="preview-slide hidden w-full grid grid-cols-1 md:grid-cols-12 gap-space-xl items-center" id="slide-4">
+<div class="md:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Halaman 09 &amp; 10</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Workflow, Terms of Service &amp; Invoice Info</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Langkah kerja transparan: 1. Pembayaran DP, 2. Penulisan Script, 3. Review 1x, 4. Syuting &amp; Editing, 5. Pelunasan &amp; Jadwal Upload. Menghilangkan kesalahpahaman antara kreator dan brand manager.
+            </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-secondary-fixed font-label-sm text-label-sm">Nomor Rekening &amp; NPWP</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Standard Agensi</span>
+</div>
+</div>
+<div class="md:col-span-6 rounded-2xl overflow-hidden bg-surface-container shadow-2xl">
+<img class="w-full h-80 object-cover" data-alt="Terms of service and payment details page in a creator media kit with clean typography, process steps numbered from 1 to 5, and bank payment card layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL8hk4Ss5Xnw3tBm6BikhNU7rzrR-bPTIKIsp7RXOoAA6uminysiM0EoW2CuW1oKGbdnEBv8SrUizXlRwwBq77t1NV6xSf_NPg7-ZsUXdvpwAAuuc6Qo0R1rCMOU2zFIceNGFXlVwoXI13HJyHOI3x2C4PI0xB0qsh7NqqguvnaMYiyRhHwpxqBojbDXynbB5t0YG5uRvadjXmh_UsEJexE1_CaKO4A24IgVajJFUH">
+</div>
+</div>
+</div>
+</section>
+<!-- Email Pitch Interactive Preview Section -->
+<section class="max-w-7xl mx-auto px-margin py-space-2xl" id="email-preview">
+<div class="p-space-xl sm:p-space-2xl rounded-3xl bg-surface-container-high/60 backdrop-blur-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Bocoran Template Cold Pitch</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Script Pitching ke PR Brand Manager (Siap Pakai)</h2>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-bright font-label-sm text-label-sm font-semibold transition-all" id="copy-btn" onclick="copyPitchText()">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span id="copy-text" class="">Salin Teks Pitch</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg font-mono text-body-sm text-on-surface-variant space-y-space-sm overflow-x-auto" id="pitch-script-block">
+<p class="text-secondary-fixed font-semibold"><span class="text-on-surface-variant font-normal">Subjek:</span> Ide Kolaborasi [Nama Brand Anda] x [Nama Anda / Channel] - Solusi [Masalah Target Market] (+ Media Kit)</p>
+<div class="h-px bg-surface-container w-full my-2"></div>
+<p class="">Halo Tim Marketing <span class="text-secondary">[Nama Brand]</span> / Halo Kak <span class="text-secondary">[Nama Brand Manager]</span>,</p>
+<p class="">Saya memperhatikan kampanye terbaru <span class="text-secondary">[Nama Brand]</span> mengenai <span class="text-on-surface">[produk baru / campaign angle]</span>, pendekatan tersebut sangat menarik dan relevan bagi audiens yang sedang mencari solusi praktis.</p>
+<p class="">Saya <span class="text-secondary">[Nama Anda]</span>, content creator di niche <span class="text-on-surface">[Niche Anda]</span> dengan basis audiens <span class="text-secondary">[Jumlah Follower]</span> pengikut yang 74% didominasi oleh <span class="text-on-surface">[demografi usia &amp; minat spesifik]</span>.</p>
+<p class="">Melihat keselarasan value ini, saya menyusun 2 konsep konten kreatif singkat (format Reels &amp; TikTok) yang berfokus mendemonstrasikan hasil pemakaian <span class="text-secondary">[Nama Produk]</span> secara organik tanpa terasa seperti hard-selling iklan biasa.</p>
+<p class="">Berikut saya lampirkan deck Media Kit lengkap beserta data insight audiens dan portofolio campaign sebelumnya: <span class="text-secondary underline">[Link Canva Media Kit Anda]</span>.</p>
+<p class="">Apakah Kakak ada waktu luang 10 menit minggu ini untuk diskusi singkat terkait penyesuaian kalender campaign bulan ini?</p>
+<p class="">Terima kasih banyak atas waktunya,<br><span class="text-on-surface font-sans font-semibold">[Nama Anda]</span><br><span class="text-on-surface-variant text-label-sm">[Kontak WhatsApp &amp; Handle Media Sosial]</span></p>
+</div>
+</div>
+</section>
+<!-- 5. Creator Success Stories -->
+<section class="max-w-7xl mx-auto px-margin py-space-3xl">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Studi Kasus Nyata</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs mb-space-sm">
+          Dari Ditolak Terus Menjadi Closing Jutaan Rupiah
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Lihat bagaimana kreator mikro menggunakan kit ini untuk menaikkan harga endorse mereka hingga 3-5x lipat.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Testimonial 1 -->
+<div class="p-space-xl rounded-2xl bg-surface-container flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              "Dulu follower 12K cuma berani pasang tarif 200 ribu per Reels karena gak paham cara presentasikan data. Setelah pakai template Canva ini dan lampirkan engagement rate, brand skincare langsung setuju kontrak paket bundling 3 video senilai Rp 4.5 Juta!"
+            </p>
+</div>
+<div class="flex items-center gap-space-md mt-space-lg pt-space-md">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of Indonesian lifestyle female nano-creator happy with positive feedback" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaXkUarMJcaT2fVU3lZVvGEN509Lw79Ipuvr5WtN4UWFlmMgAh1XYIT31Sa63H56bNaXaiDpVztY9aKEO160YtTfEtrjIDn0RD-UlQ2wOY7sS11twZPSXcFDFdCxmYcyGagAYF-o0P1P38e4HFpTOP0GdfAYlV6sVuKVW22_r14E5OjV7_bcNeHZH5gNS6w8q_XkN281JTXAz1RQ0VG1uZCv_7_Ih2ryngP_Nnw0Ol">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Rania Safitri</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Beauty &amp; Skincare Creator • 18K Followers</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-space-xl rounded-2xl bg-surface-container flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              "Klausul hak cipta dan usage rights di draft kontraknya menyelamatkan saya. Brand gadget mau pakai video saya buat Facebook Ads selama 6 bulan. Berkat template klausul iklan, saya berhasil add-on fee tambahan Rp 8 Juta di luar biaya video!"
+            </p>
+</div>
+<div class="flex items-center gap-space-md mt-space-lg pt-space-md">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of Indonesian male tech reviewer smiling confident" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi7Qx2xEEDOeN71CqDPxqriFThuHxqpHtfd79ix2iGYlLZvxrvb_bhTu9SPKVAUEApiQk4rfw07cwGHFdPX-EuPYNvzDKNhiVZoyr_TzRwk182YyHxLPjO8HkY2wUyJVVhw30xC1eCGsxrmMN60G0RMM42QyP9gTQta1MhtCafjN1xOJzhbLC6CHLgtkuOhTHuaqngBMIL0NVHBnTsEmeZByZbHh1BH0JpW7zKIraW">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Bimo Satrio</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tech &amp; Productivity • 45K Followers</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-space-xl rounded-2xl bg-surface-container flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              "Script email cold pitch nomor 2 (format agency) manjur banget. Saya kirim ke 5 PR agency di Jakarta, 3 agensi balas dalam 48 jam dan 2 di antaranya langsung kirim brief campaign FMCG. Gak ada lagi drama pesan cuma di-read!"
+            </p>
+</div>
+<div class="flex items-center gap-space-md mt-space-lg pt-space-md">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of young Indonesian creative foodie content creator" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDumASymeaBcn30-ypB2BQc_fTKACyi0RLa5N5w8oV_yJbGex3QGFrguHzEXxlSYjweZYgcEdHXnIvjFb7_uk0ENuZtpfTmjMGdvEndj394BMrYXOSWLCi4DYFRr_U0KqLBeYW0FONkzTSLxiaLNZxWfrFhZQT2WYzJp0fRuqxY8K7bIniS2QA0eRhlVD_lg8wWt8UvhtobJcjznnsF0Kzk17y4lI0heWiRDM_hEydk">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Dimas Maulana</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Culinary &amp; Coffee Enthusiast • 27K Followers</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Direct Access & Copy Template CTA -->
+<section class="max-w-7xl mx-auto px-margin py-space-3xl" id="download-section">
+<div class="relative rounded-3xl bg-surface-container-high p-space-xl sm:p-space-3xl overflow-hidden shadow-2xl">
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-secondary-container/30 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-96 h-96 bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container/60 text-secondary-fixed mb-space-md">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Akses Gratis 100% Selamanya</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-md">
+            Ambil Akses Template Sekarang &amp; Kirim Pitch Pertama Anda Hari Ini
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-2xl">
+            Tinggal klik tombol di bawah, lakukan duplikasi ke akun Canva dan Google Drive pribadi Anda, ubah identitas nama, dan mulai raih kerja sama berbayar.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md w-full max-w-xl">
+<!-- Canva Access Button -->
+<a class="flex items-center justify-center gap-space-sm px-space-xl py-space-lg rounded-2xl bg-secondary-container text-secondary-fixed hover:bg-secondary hover:text-on-secondary font-label-lg text-label-lg transition-all shadow-[0_10px_25px_-5px_rgba(87,27,193,0.5)] hover:-translate-y-0.5" href="https://canva.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">palette</span>
+<span class="">Akses Template Canva</span>
+</a>
+<!-- Docs Access Button -->
+<a class="flex items-center justify-center gap-space-sm px-space-xl py-space-lg rounded-2xl bg-surface-container text-on-surface hover:bg-surface-bright font-label-lg text-label-lg transition-all hover:-translate-y-0.5" href="https://docs.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">description</span>
+<span class="">Salin Dokumen Docs</span>
+</a>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-lg mt-space-2xl text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-base">check</span>
+<span class="">Bisa dibuka di Canva Gratis &amp; Canva Pro</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-base">check</span>
+<span class="">Format Standar Brand Agency 2025</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-base">check</span>
+<span class="">Tanpa Syarat Tersembunyi</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. FAQ Section -->
+<section class="max-w-4xl mx-auto px-margin py-space-2xl">
+<div class="text-center mb-space-2xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Tanya Jawab Seputar Sponsorship</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
+          Pertanyaan yang Sering Diajukan Kreator
+        </h2>
+</div>
+<div class="space-y-space-md">
+<!-- FAQ 1 -->
+<div class="faq-item rounded-2xl bg-surface-container p-space-lg cursor-pointer transition-colors" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Apakah akun dengan follower di bawah 10K (Nano Creator) bisa memakai rate card ini?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-answer hidden mt-space-md pt-space-sm text-on-surface-variant font-body-md text-body-md">
+            Sangat bisa. Brand masa kini justru memprioritaskan nano dan micro-creator karena engagement rate yang jauh lebih tinggi dan loyal. Template ini dirancang untuk menonjolkan rasio interaksi, relevansi demografi kota, dan kualitas visual ketimbang sekadar total angka follower mentah.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="faq-item rounded-2xl bg-surface-container p-space-lg cursor-pointer transition-colors" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Apa perbedaan antara Organic Posting Rate dengan Ad Usage Rights?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-answer hidden mt-space-md pt-space-sm text-on-surface-variant font-body-md text-body-md">
+            Organic Posting Rate adalah biaya untuk mengunggah konten di feed akun Anda sendiri. Ad Usage Rights (atau Whitelisting/Spark Ads) adalah izin tambahan bagi brand untuk memasukkan konten Anda ke campaign iklan berbayar (TikTok Ads/Meta Ads). Di industri profesional, hak iklan dikenakan biaya tambahan (biasanya +50% hingga 100% dari base rate per 30 hari).
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="faq-item rounded-2xl bg-surface-container p-space-lg cursor-pointer transition-colors" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bagaimana jika brand menolak membayar DP 50% di awal?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-answer hidden mt-space-md pt-space-sm text-on-surface-variant font-body-md text-body-md">
+            Template kami menyediakan klausul diplomatis: untuk korporasi besar yang memiliki kebijakan Term of Payment (TOP 30 hari), Anda bisa mengajukan Purchase Order (PO) resmi atau SPK berkekuatan hukum sebelum kamera mulai merekam. Ini mencegah situasi video sudah selesai di-upload namun invoice tidak dicairkan.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="faq-item rounded-2xl bg-surface-container p-space-lg cursor-pointer transition-colors" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Apakah saya butuh langganan Canva Pro berbayar?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-answer hidden mt-space-md pt-space-sm text-on-surface-variant font-body-md text-body-md">
+            Tidak perlu. Seluruh font, grid, elemen bentuk grafis, dan layout yang kami pakai 100% kompatibel dengan akun Canva versi gratis. Anda tidak perlu membayar sepeser pun untuk mengunduh versi PDF beresolusi tinggi.
+          </div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  function switchPreview(index) {
+    const slides = document.querySelectorAll('.preview-slide');
+    const buttons = document.querySelectorAll('.tab-btn');
+
+    slides.forEach((slide, idx) => {
+      if (idx === index) {
+        slide.classList.remove('hidden');
+      } else {
+        slide.classList.add('hidden');
+      }
+    });
+
+    buttons.forEach((btn, idx) => {
+      if (idx === index) {
+        btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        btn.classList.add('bg-secondary-container', 'text-secondary-fixed');
+      } else {
+        btn.classList.remove('bg-secondary-container', 'text-secondary-fixed');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      }
+    });
+  }
+
+  function toggleFaq(element) {
+    const answer = element.querySelector('.faq-answer');
+    const icon = element.querySelector('.faq-icon');
+    
+    if (answer.classList.contains('hidden')) {
+      answer.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+      element.classList.add('bg-surface-container-high');
+    } else {
+      answer.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+      element.classList.remove('bg-surface-container-high');
+    }
+  }
+
+  function copyPitchText() {
+    const textToCopy = `Subjek: Ide Kolaborasi [Nama Brand] x [Nama Anda] - Solusi [Masalah Target Market] (+ Media Kit)
+
+Halo Tim Marketing [Nama Brand] / Halo Kak [Nama Brand Manager],
+
+Saya memperhatikan kampanye terbaru [Nama Brand] mengenai [produk baru / campaign angle], pendekatan tersebut sangat menarik dan relevan bagi audiens yang sedang mencari solusi praktis.
+
+Saya [Nama Anda], content creator di niche [Niche Anda] dengan basis audiens [Jumlah Follower] pengikut yang 74% didominasi oleh [demografi usia & minat spesifik].
+
+Melihat keselarasan value ini, saya menyusun 2 konsep konten kreatif singkat (format Reels & TikTok) yang berfokus mendemonstrasikan hasil pemakaian [Nama Produk] secara organik tanpa terasa seperti hard-selling iklan biasa.
+
+Berikut saya lampirkan deck Media Kit lengkap beserta data insight audiens dan portofolio campaign sebelumnya: [Link Canva Media Kit Anda].
+
+Apakah Kakak ada waktu luang 10 menit minggu ini untuk diskusi singkat terkait penyesuaian kalender campaign bulan ini?
+
+Terima kasih banyak atas waktunya,
+[Nama Anda]
+[Kontak WhatsApp & Handle Media Sosial]`;
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      const copyBtn = document.getElementById('copy-text');
+      copyBtn.innerText = 'Tersalin ke Clipboard!';
+      setTimeout(() => {
+        copyBtn.innerText = 'Salin Teks Pitch';
+      }, 2500);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-3xl"><div class="max-w-7xl mx-auto px-margin py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="fajarcreative logo" class="w-8 h-8 rounded-full object-cover overflow-hidden ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCewsEKzxbEQsnIUuW1xuLRUUyB27yp3Gywfx5oBtb044SNUq-Qo3E_l5aSyKxG0cWpcJpEfV-8PPZHKfCyqVhvtz0Tay8AfxamtEXu0mpRyiFsfFxUG37uc4nxqxgr8s_-XN85V04UCtXKLjNLwa5ugMwgrWM0OJivh_YYUeiGsIhyAUoUDk2mhNE0IiYyxexCwWjHoMlPxmXc0HnxDPl4qb7doQYY-0ll41sCjN7FPWG2GycA-DlQ-w"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">fajarcreative</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Toolkit esensial dan suite otomasi berkonversi tinggi untuk kreator konten, influencer, dan solopreneur digital Indonesia.</p><div class="flex items-center gap-space-sm mt-space-sm"><img alt="fajarcreative logo" class="w-8 h-8 rounded-full object-cover overflow-hidden ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCewsEKzxbEQsnIUuW1xuLRUUyB27yp3Gywfx5oBtb044SNUq-Qo3E_l5aSyKxG0cWpcJpEfV-8PPZHKfCyqVhvtz0Tay8AfxamtEXu0mpRyiFsfFxUG37uc4nxqxgr8s_-XN85V04UCtXKLjNLwa5ugMwgrWM0OJivh_YYUeiGsIhyAUoUDk2mhNE0IiYyxexCwWjHoMlPxmXc0HnxDPl4qb7doQYY-0ll41sCjN7FPWG2GycA-DlQ-w"><span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-tertiary-fixed">Verified Creator Hub</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Koleksi Toolkit</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="hook-reels-fomo" href="#">100+ Template Hook Viral Reels</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="audit-bio-ig" href="#">Checklist Audit Bio Instagram Pro</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pitch-brand-rate-card" href="#">Template Media Kit &amp; Sponsorship Pitch</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="kalkulator-cuan" href="#">Spreadsheet Kalkulator Cuan Kreator</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Komunitas Kreator</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Telegram Creator Circle</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Weekly Live Breakdown</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Sponsorship Deal Board</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Newsletter Insight Mingguan</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Legal &amp; Bantuan</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Lisensi &amp; Penggunaan Aset</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Kebijakan Privasi</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Ketentuan Layanan</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Hubungi Tim Support</a><a class="font-body-sm text-body-sm text-tertiary hover:underline flex items-center gap-1 transition-colors" href="https://wa.me/6282338903403" target="_blank"><span class="material-symbols-outlined text-sm">chat</span> WhatsApp: 082338903403</a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 fajarcreative. Seluruh hak cipta dilindungi. • WA: 082338903403</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant">Obsidian Studio Suite Standard</span><span class="font-label-sm text-label-sm text-primary-fixed-dim">ID Edition</span></div></div></div></footer>
+
+
+
+</body></html>

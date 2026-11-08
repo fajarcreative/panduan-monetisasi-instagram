@@ -1,0 +1,617 @@
+<!DOCTYPE html><html class="dark" lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#002113", "background": "#121317", "outline-variant": "#5c3f42", "primary-container": "#ff4f73", "surface-container": "#1f1f24", "surface-container-low": "#1a1b20", "surface-bright": "#38393e", "on-background": "#e3e2e8", "on-secondary": "#3c0091", "error-container": "#93000a", "surface-container-lowest": "#0d0e12", "primary-fixed-dim": "#ffb2ba", "tertiary-fixed-dim": "#4edea3", "surface-container-high": "#292a2e", "secondary-fixed": "#e9ddff", "on-primary": "#670020", "tertiary": "#4edea3", "on-primary-fixed-variant": "#910030", "surface-dim": "#121317", "on-primary-container": "#5a001b", "primary-fixed": "#ffd9dc", "inverse-primary": "#bd0042", "on-secondary-fixed": "#23005c", "on-surface": "#e3e2e8", "on-primary-fixed": "#400011", "primary": "#ffb2ba", "surface-variant": "#343439", "secondary": "#d0bcff", "on-tertiary": "#003824", "on-surface-variant": "#e5bdc0", "outline": "#ac888b", "inverse-on-surface": "#2f3035", "surface": "#121317", "on-secondary-container": "#c4abff", "secondary-container": "#571bc1", "surface-tint": "#ffb2ba", "on-tertiary-container": "#00311f", "error": "#ffb4ab", "secondary-fixed-dim": "#d0bcff", "inverse-surface": "#e3e2e8", "surface-container-highest": "#343439", "tertiary-fixed": "#6ffbbe", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "on-error": "#690005", "on-secondary-fixed-variant": "#5516be", "tertiary-container": "#00a572" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "2rem", "space-2xl": "4rem", "space-3xl": "6rem" }, "fontFamily": { "body-md": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display-xl-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-xl-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "display-xl": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)] border-b border-surface-container-high">
+<div class="h-20 max-w-7xl mx-auto px-3 sm:px-margin flex items-center justify-between gap-2 sm:gap-gutter">
+<a href="../../roadmap_utama_step_by_step_cuan_instagram/code.html" class="flex items-center gap-2 sm:gap-space-md shrink-0 hover:opacity-90 transition-opacity">
+<img alt="fajarcreative logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover overflow-hidden ring-2 ring-primary-container/20 shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBro0SNaSR4_J6183-Pp-obBr0O-PVi5hj8APnOjNq5H_i771RLLSnjZ4XTkF6xQMgzQUMAJ1wm9ymoJ8pBmPFCT_9CnTP37wz0S_kVYW9t-Jda-pj3g1zly_UDsz8QzZI9tT11X37LXLn0zN1xjdhkq4agh5FE-LAjTAqQDpmklTKnTRH1QKayX_7WCPl2APpX8oQe1pBPnpkkVFb6_Fssi6i3hXp2bMWB2KJocLi6-EHDEP8Z_6wmWw">
+<div class="hidden sm:flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">fajarcreative</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Template Premium</span>
+</div>
+</a>
+
+<nav class="flex items-center gap-1 sm:gap-space-xs overflow-x-auto py-1 max-w-[55vw] sm:max-w-none">
+<a class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-surface-container-high text-on-surface hover:text-primary transition-colors flex items-center gap-1" href="../../roadmap_utama_step_by_step_cuan_instagram/code.html">
+<span class="material-symbols-outlined text-[15px]">arrow_back</span>
+<span class="hidden md:inline">Roadmap Utama</span>
+</a>
+<a class="px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-surface-container-high text-on-surface hover:text-primary transition-colors flex items-center gap-1" href="../../template_premium/code.html">
+<span class="material-symbols-outlined text-[15px]">grid_view</span>
+<span class="hidden md:inline">Semua Template</span>
+</a>
+<a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../100_template_hook_reels_bikin_fomo/code.html">⚡ Hook Reels</a><a aria-current="page" class="px-2.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap bg-primary-container text-on-primary-container shadow-md" href="../checklist_audit_bio_instagram_pro/code.html">🔍 Audit Bio</a><a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../kalkulator_cuan_spreadsheet/code.html">📊 Spreadsheet</a><a class="px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="../template_pitch_brand_rate_card/code.html">💼 Rate Card</a>
+</nav>
+
+<div class="flex items-center gap-2 shrink-0">
+<a href="https://wa.me/6282338903403" target="_blank" class="inline-flex items-center gap-1 px-2.5 sm:px-space-md py-1.5 sm:py-space-xs rounded-full bg-surface-container text-tertiary hover:text-tertiary-fixed text-xs font-semibold transition-colors">
+<span class="material-symbols-outlined text-base">chat</span>
+<span class="hidden lg:inline">WA: 082338903403</span>
+</a>
+</div>
+</div>
+</header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full text-on-surface">
+<!-- Ambient Glow Canvas -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[850px] h-[550px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-[45%] right-0 w-[500px] h-[500px] bg-tertiary/5 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+<div class="absolute bottom-1/4 -left-20 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+<!-- 1. HERO SECTION -->
+<section class="max-w-7xl mx-auto px-margin pt-space-xl pb-space-3xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left: Copy & Conversion Action -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-high w-fit shadow-inner">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">OPTIMASI BIO INSTAGRAM • CHECKLIST PDF 12 POIN</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<h1 class="font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface text-balance">
+              Checklist Audit Bio Instagram Pro: Ubah Profil Sepi Menjadi <span class="text-primary underline decoration-primary/40 underline-offset-8">Mesin Konversi</span> Follower
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Audit 12 poin krusial: foto profil kontras tinggi, nama SEO-friendly penarik search, formula kalimat bio 3 detik, hingga arsitektur tautan berkonversi tinggi. 1.8 MB panduan taktis siap praktek.
+            </p>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center gap-space-sm rounded-full bg-primary-container text-on-primary-container px-space-xl py-space-md font-label-lg text-label-lg transition-all shadow-[0_12px_32px_-6px_rgba(255,79,115,0.35)] hover:-translate-y-0.5 hover:shadow-[0_16px_36px_-6px_rgba(255,79,115,0.45)]" href="#download-box">
+<span class="material-symbols-outlined text-xl">download</span>
+<span class="">Download Checklist PDF (Gratis • 1.8 MB)</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface px-space-lg py-space-md font-label-lg text-label-lg transition-all" href="#audit-matrix">
+<span class="">Pelajari 12 Poin Audit</span>
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+</a>
+</div>
+<!-- Proof KPI Metric Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-md">
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">trending_up</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">+94%</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lonjakan Profile Visit ke Follower pasca audit 15 menit</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-2xl">verified</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">14.200+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kreator &amp; Social Media Specialist telah mengunduh</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Isometric Mockup with Interactive Annotated Pins -->
+<div class="lg:col-span-5 relative flex justify-center">
+<!-- Glass Card Device Wrapper -->
+<div class="relative w-full max-w-md p-space-lg rounded-2xl bg-surface-container-low shadow-2xl backdrop-blur-xl">
+<!-- Header bar inside mockup -->
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">CUAN AUDIT v2.4</span>
+</div>
+<!-- Profile Frame -->
+<div class="flex flex-col gap-space-md">
+<!-- Pin 1: High Contrast Avatar -->
+<div class="relative p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<div class="relative">
+<img class="w-16 h-16 rounded-full object-cover shadow-md" data-alt="Close up professional headshot of an Indonesian creative director wearing modern dark attire with neon rim lighting in high-contrast cinematic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANfxJN49O6zrSfH4Jc_9qE1xodm2ej9wciFioIciyw0rdDvw8j4tLjBEIrwXwpnPXKiOWPGTiP-rWvhZNCfG4y1UnrEsvI-D2cFOFB-2RqE_IHf61D0vuM0sHhpiOqf1CS4zyHAQRcmxRxg2xO4N82H6wPHw4wYnZ6In4PPL_nd_ASLYE0uV10pg4zg4PCZNdBBc3Qd8LDVq2rZ5Z7qaepxVA5QxZLF9mo2FxcIgd9">
+<span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center text-[10px] font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Pilar 1 • Visual Focal</span>
+<p class="font-headline-sm text-sm font-bold text-on-surface truncate">Rizal Ramadhan | Brand Coach</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Foto 1:1 Kontras 4.5:1 ratio</p>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary/20 text-tertiary font-label-sm text-[10px]">Lolos</span>
+</div>
+<!-- Pin 2: SEO Name Field -->
+<div class="relative p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-xs shrink-0">2</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-primary uppercase">Pilar 2 • Search Intent</span>
+<p class="font-body-md text-body-md font-semibold text-on-surface">Target Keyword: Edukasi Bisnis</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Terindeks di pencarian Explore IG</p>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary/20 text-primary font-label-sm text-[10px]">SEO OK</span>
+</div>
+<!-- Pin 3: One-line Value Formula -->
+<div class="relative p-space-md rounded-xl bg-surface-container flex items-start gap-space-md">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">3</div>
+<div class="flex-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase">Pilar 3 • Value Prop</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight mt-0.5">
+                    "Bantu 500+ solopreneur scale revenue tanpa iklan via storytelling Reels."
+                  </p>
+</div>
+</div>
+<!-- Pin 4: Strategic High-Converting Biolink -->
+<div class="relative p-space-md rounded-xl bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-xs shrink-0">4</div>
+<div class="truncate">
+<span class="font-label-sm text-label-sm text-primary uppercase">Pilar 4 • Final CTA</span>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface truncate">vault.creator.id/free-kit</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-lg">open_in_new</span>
+</div>
+</div>
+<!-- Audit Floating Micro-Badge -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">check_circle</span>
+                Checklist Audit Terverifikasi
+              </span>
+<span class="">12/12 Poin Standar Pro</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. THE 12-POINT AUDIT MATRIX BREAKDOWN -->
+<section class="w-full bg-surface-container-lowest py-space-3xl" id="audit-matrix">
+<div class="max-w-7xl mx-auto px-margin flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">MATRIKS BEDAH 12 ELEMEN</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+              4 Pilar Utama Audit Bio Berdaya Konversi
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tiap elemen dirancang untuk menjawab keraguan audiens dalam waktu kurang dari 3 detik pertama saat membuka halaman profil Anda.
+            </p>
+</div>
+<div class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-start md:self-auto">
+            Metodologi Teruji 2025
+          </div>
+</div>
+<!-- 4 Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Pilar 1 -->
+<div class="flex flex-col p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-md group">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">palette</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Pilar 01</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-space-xs mb-space-sm">Visual Identity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Membangun daya pikat visual instan dan kesan profesional di detik pertama.</p>
+<div class="flex flex-col gap-space-sm mt-auto">
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Foto profil kontras tinggi &amp; ekspresi terarah</span>
+</div>
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Palet warna brand konsisten 2-3 nada</span>
+</div>
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Cover highlight minimalis berhirarki jelas</span>
+</div>
+</div>
+</div>
+<!-- Pilar 2 -->
+<div class="flex flex-col p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-md group">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-tertiary mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">search_insights</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">Pilar 02</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-space-xs mb-space-sm">Searchability (SEO)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Membantu profil ditemukan oleh calon audiens lewat algoritma pencarian IG.</p>
+<div class="flex flex-col gap-space-sm mt-auto">
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Display Name mengandung target keyword niche</span>
+</div>
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Kategori akun profesional yang relevan &amp; aktif</span>
+</div>
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Username bersih tanpa simbol membingungkan</span>
+</div>
+</div>
+</div>
+<!-- Pilar 3 -->
+<div class="flex flex-col p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-md group">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary mb-space-md group-hover:scale-110 transition-transform">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Pilar 03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-space-xs mb-space-sm">Value Proposition</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Memberi alasan tak terbantahkan mengapa audiens harus mengklik tombol Follow.</p>
+<div class="flex flex-col gap-space-sm mt-auto">
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">1 baris pengait masalah &amp; solusi audiens</span>
+</div>
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Bukti sosial singkat (angka, hasil, atau klien)</span>
+</div>
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Tone of voice selaras target segmen pasar</span>
+</div>
+</div>
+</div>
+<!-- Pilar 4 -->
+<div class="flex flex-col p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all shadow-md group">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary-fixed mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">ads_click</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase font-bold tracking-wider">Pilar 04</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-space-xs mb-space-sm">Biolink &amp; Funnel</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Mengarahkan perhatian audiens menjadi prospek email, cuan, atau lead WhatsApp.</p>
+<div class="flex flex-col gap-space-sm mt-auto">
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Instruksi CTA tunggal penunjuk link di bio</span>
+</div>
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Landing page biolink loading sub-2 detik</span>
+</div>
+<div class="flex items-start gap-space-xs text-sm">
+<span class="material-symbols-outlined text-tertiary text-base shrink-0 mt-0.5">check</span>
+<span class="font-body-sm text-body-sm text-on-surface">Tombol aksi kontak profesional (Email / WA)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. INTERACTIVE SELF-AUDIT SCORECARD & CASE STUDY -->
+<section class="max-w-7xl mx-auto px-margin py-space-3xl flex flex-col gap-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Interactive Micro-Scorecard Widget -->
+<div class="lg:col-span-6 flex flex-col p-space-xl rounded-2xl bg-surface-container-low shadow-xl">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wide">SIMULASI MANDIRI</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Cek Skor Kesiapan Bio Anda</h3>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg font-bold text-primary" id="score-display">0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 6 Poin Cepat</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+            Centang item yang sudah aktif di profil Instagram Anda sekarang untuk mendeteksi potensi kebocoran traffic:
+          </p>
+<!-- Interactive Items List -->
+<div class="flex flex-col gap-space-sm" id="audit-check-group">
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="audit-item w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface select-none">Foto profil berlatar solid kontras, bukan logo kecil buram</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="audit-item w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface select-none">Nama akun memasukkan kata kunci industri/niche</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="audit-item w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface select-none">Menjelaskan siapa yang Anda bantu &amp; apa solusinya</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="audit-item w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface select-none">Memiliki angka kredibilitas atau bukti portofolio jelas</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="audit-item w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface select-none">Ada kalimat penunjuk (Call to Action) sebelum link bio</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input class="audit-item w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface select-none">Highlight teratur dengan cover bersih tanpa clutter</span>
+</label>
+</div>
+<!-- Dynamic Verdict Box -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container flex items-center justify-between" id="verdict-card">
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface" id="verdict-label">Status: Belum Terisi</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="verdict-desc">Centang poin di atas untuk mengetahui diagnosa profil.</p>
+</div>
+<a class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shrink-0" href="#download-box">
+              Perbaiki via PDF
+            </a>
+</div>
+</div>
+<!-- Before & After Transformation Case Study -->
+<div class="lg:col-span-6 flex flex-col justify-between p-space-xl rounded-2xl bg-surface-container-low shadow-xl">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wide">STUDI KASUS NYATA</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Niche: Konsultan Kreatif</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-space-md">Transformasi Bio 15 Menit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+              Perbandingan akun @DimasArtisan sebelum dan sesudah mengimplementasikan checklist 12 poin audit kami:
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Before -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs opacity-75">
+<span class="font-label-sm text-label-sm text-error font-bold uppercase tracking-wider">❌ Sebelum Audit</span>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Dimas Maulana</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                  "Coffee lover ☕ | Belajar desain | DM for collab 📩 | Check out my link below👇"
+                </p>
+<div class="mt-space-sm pt-space-xs flex justify-between font-label-sm text-label-sm text-error">
+<span class="">CVR Bio: 1.4%</span>
+<span class="">Cluttered</span>
+</div>
+</div>
+<!-- After -->
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-space-xs shadow-md">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">✅ Sesudah Audit (Pro)</span>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Dimas | Desain Identitas Brand</p>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  "Bantu UMKM raih omzet 10x via identitas visual kelas atas. Portofolio 40+ brand: 👇"
+                </p>
+<div class="mt-space-sm pt-space-xs flex justify-between font-label-sm text-label-sm text-tertiary font-bold">
+<span class="">CVR Bio: 7.9%</span>
+<span class="">5.6x Followers Naik</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Tiap perubahan kalimat bio tidak memerlukan biaya iklan satu rupiah pun—murni optimasi psikologi konversi audiens.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. WHAT'S INSIDE THE 1.8 MB PDF -->
+<section class="w-full bg-surface-container-lowest py-space-3xl">
+<div class="max-w-7xl mx-auto px-margin flex flex-col gap-space-2xl">
+<div class="text-center max-w-3xl mx-auto flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">ANATOMI ASSET</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+            Apa yang Anda Dapatkan di Dokumen 1.8 MB Ini?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Bukan sekadar lembar bacaan biasa, melainkan lembar kerja operasional (working checklist) siap pakai untuk kreator solo maupun agensi.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">print</span>
+</div>
+<h4 class="font-headline-sm text-base font-bold text-on-surface">A4 Siap Cetak (Printable)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Tata letak grid presisi tinggi yang dapat dicetak langsung di kertas A4 untuk memudahkan proses review offline bersama tim.
+            </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">check_box</span>
+</div>
+<h4 class="font-headline-sm text-base font-bold text-on-surface">Interactive Digital Checkbox</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Formulir PDF interaktif yang bisa dicentang langsung di smartphone, tablet, atau laptop tanpa memerlukan software berbayar.
+            </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">format_quote</span>
+</div>
+<h4 class="font-headline-sm text-base font-bold text-on-surface">20 Contoh Bio per Niche</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Formula siap copy-paste untuk niche E-Commerce, Edukasi, Freelance, Konsultan, Gaya Hidup, dan Solopreneur Digital.
+            </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined">do_not_disturb_on</span>
+</div>
+<h4 class="font-headline-sm text-base font-bold text-on-surface">Do's &amp; Don'ts Cheatsheet</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Daftar pantangan fatal yang sering menjatuhkan otoritas akun Anda di mata calon brand sponsor maupun audiens baru.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. SOCIAL PROOF & TESTIMONIALS -->
+<section class="max-w-7xl mx-auto px-margin py-space-3xl flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">BUKTI KOMUNITAS</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+            Dipercaya Praktisi Konten Indonesia
+          </h2>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">4.9 / 5.0 dari 1.800+ rating kreator</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Review 1 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col justify-between gap-space-lg shadow-sm">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            "Checklist ini menghemat waktu pitching saya ke klien. Dalam seminggu setelah merapikan SEO nama dan link funnel, rasio follow profil saya melonjak 3x lipat."
+          </p>
+<div class="flex items-center gap-space-md pt-space-sm">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait photo of a young female Indonesian creative freelancer smiling confident in a modern co-working studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-YATZBTtiE6hW5FLo7Rkh8jICanPqGlDstG5iJ91lEDyo2HsT18RVX_zoyCFToGcBkaSHK71GXhEIXtRbrC3HOP7GDOmT4oRdlbMVh4K5Jv2nXR2hJS_HmR8eNFalS-hXqEstRReBGsBCW-nNAZo1fPdha0d-2y8oo8XaDFzLi11r11fKx-B0D7x9aSoZUxACdQUy-0hzH7cNt9y5OPXlVR_My156SKeNnFZWeCgU">
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Amanda Stefany</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Social Media Strategist • 48k Followers</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col justify-between gap-space-lg shadow-sm">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            "Seringkali kreator fokus bikin Reels viral tapi profilnya berantakan. Begitu ada video fyp, orang batal follow karena bio membingungkan. PDF ini adalah obat mujarabnya."
+          </p>
+<div class="flex items-center gap-space-md pt-space-sm">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Close up portrait of an Indonesian male content creator wearing stylish glasses in an urban editorial studio with warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvLKVUyRqfuviAogABCP8RddcXi1KbbMuFYbT-YbQhqYTvznEKd0UNaAQMoDnPW53FcwYx6BZrNn3JAHMHzzanU3qKb2iKdWaUWfgUD7wgRo21phFIXVC1DA6JGoP2N9aN_DQgK_QbligtLahn2vPJ5RFdGS08JuyRVj1ht_t9BfhIT74j4dsFizSKVSI3V3Ss1Ck_-hXmJAkHJV_dkpZ1H4xdIciqatHA72BgdM8a">
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Arya Pratama</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Founder KreatifLab ID • 120k Followers</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-space-xl rounded-2xl bg-surface-container-low flex flex-col justify-between gap-space-lg shadow-sm">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            "Kompak dan tidak bertele-tele. Format PDF 1.8 MB-nya rapi banget bisa dicetak. Sangat recommended buat agensi yang mau standarisasi akun klien."
+          </p>
+<div class="flex items-center gap-space-md pt-space-sm">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of an Indonesian professional woman wearing dark formal blazer in a sleek contemporary tech office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYeShAlJi_7oNCfc42MYIHr7JSPxj6D4bI4_W4rXfV33gAAKLw5niCyqOlXiwBXPQ-I9O0Jp8Q9cKOT7a_8QPzbgwCwLJwSZNjs-MC2V6obs0CscjCio9Xe_t9EwT-O9PdxxZ4_phtIerduWzvNPSj1AXMH_ZxWMU4WVEiScCujQYds3p-bzzmaPmuYQXeo4tjjzwD2ExWpZzuFjleh48nIgpQRVTNwNYnnOD4-0XQ">
+<div>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Nadia Kartika</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Agency Lead • MediaKarsa</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. FINAL DOWNLOAD CARD & FAQ SECTION -->
+<section class="w-full bg-surface-container-lowest py-space-3xl" id="download-box">
+<div class="max-w-7xl mx-auto px-margin flex flex-col gap-space-3xl">
+<!-- Golden / Amber Luminous Download Box -->
+<div class="relative overflow-hidden p-space-2xl md:p-space-3xl rounded-3xl bg-surface-container-low shadow-2xl flex flex-col items-center text-center">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container mb-space-md">
+<span class="material-symbols-outlined text-primary text-sm">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Akses Langsung • Tanpa Biaya Tersembunyi</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface max-w-2xl tracking-tight mb-space-sm">
+            Siap Mengubah Bio Profil Menjadi Corong Konversi Follower?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-xl">
+            Unduh Checklist PDF 12 Poin (1.8 MB) dan mulai lakukan audit menyeluruh dalam 15 menit ke depan.
+          </p>
+<!-- Download Action Module -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full max-w-md">
+<button class="w-full inline-flex items-center justify-center gap-space-sm rounded-full bg-primary-container text-on-primary-container px-space-xl py-space-md font-label-lg text-label-lg transition-all shadow-[0_12px_32px_-6px_rgba(255,79,115,0.4)] hover:-translate-y-0.5 hover:shadow-[0_16px_36px_-6px_rgba(255,79,115,0.55)] cursor-pointer" id="direct-download-btn">
+<span class="material-symbols-outlined text-xl">file_download</span>
+<span class="">Unduh Checklist PDF (1.8 MB)</span>
+</button>
+</div>
+<!-- Toast feedback element (hidden initially) -->
+<div class="hidden mt-space-md px-space-md py-space-xs rounded-full bg-tertiary-container text-on-tertiary font-label-md text-label-md items-center gap-space-xs" id="download-toast">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span class="">Memulai download otomatis Checklist-Audit-Bio-Pro.pdf...</span>
+</div>
+<div class="flex items-center gap-space-xl mt-space-xl pt-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+              Format: Dokumen PDF
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">data_object</span>
+              Ukuran: 1.8 MB
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">update</span>
+              Edisi: Q1 2025
+            </span>
+</div>
+</div>
+<!-- FAQ Section -->
+<div class="max-w-3xl mx-auto w-full flex flex-col gap-space-lg">
+<div class="text-center flex flex-col gap-space-xs mb-space-md">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">PERTANYAAN UMUM</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Frequently Asked Questions</h3>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<h4 class="font-headline-sm text-base font-bold text-on-surface">Apakah checklist ini cocok untuk akun Instagram pemula?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Sangat cocok. Justru memulai dengan struktur bio yang benar sejak awal akan melipatgandakan efektivitas setiap konten Reels atau postingan yang Anda publikasikan.
+              </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<h4 class="font-headline-sm text-base font-bold text-on-surface">Berapa lama waktu yang dibutuhkan untuk menyelesaikan audit?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Rata-rata kreator menyelesaikan 12 poin audit dalam waktu 15 hingga 20 menit, termasuk pemilihan kata kunci nama dan penyusunan kalimat value proposition.
+              </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<h4 class="font-headline-sm text-base font-bold text-on-surface">Apakah file PDF ini dapat dibuka di smartphone Android &amp; iOS?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Ya, dokumen diformat standar PDF yang kompatibel secara sempurna dengan penampil PDF bawaan browser, Google Chrome, Safari, maupun aplikasi Adobe Acrobat Reader.
+              </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<h4 class="font-headline-sm text-base font-bold text-on-surface">Bagaimana jika akun saya adalah akun toko online (E-commerce)?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Di dalam PDF terdapat bab spesifik yang mengupas tuntas optimasi profil khusus toko online, termasuk cara menampilkan link katalog terkurasi dan garansi belanja.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Micro-Interactions Script -->
+<script>
+    (function initAuditInteractive() {
+      const checkboxes = document.querySelectorAll('.audit-item');
+      const scoreDisplay = document.getElementById('score-display');
+      const verdictLabel = document.getElementById('verdict-label');
+      const verdictDesc = document.getElementById('verdict-desc');
+      const downloadBtn = document.getElementById('direct-download-btn');
+      const downloadToast = document.getElementById('download-toast');
+
+      function updateScore() {
+        let count = 0;
+        checkboxes.forEach(cb => {
+          if (cb.checked) count++;
+        });
+
+        if (scoreDisplay) scoreDisplay.textContent = count;
+
+        if (verdictLabel && verdictDesc) {
+          if (count === 0) {
+            verdictLabel.textContent = 'Status: Belum Terisi';
+            verdictDesc.textContent = 'Centang poin di atas untuk mengetahui diagnosa profil.';
+          } else if (count <= 2) {
+            verdictLabel.textContent = 'Status: Rawan Kebocoran Traffic (Kritis)';
+            verdictDesc.textContent = 'Bio Anda kehilangan banyak calon follower karena tidak ada kejelasan value.';
+          } else if (count <= 4) {
+            verdictLabel.textContent = 'Status: Standar Menengah (Perlu Polish)';
+            verdictDesc.textContent = 'Sudah cukup baik, namun conversion rate biolink masih bisa ditingkatkan.';
+          } else {
+            verdictLabel.textContent = 'Status: Pro Level Siap Konversi! 🔥';
+            verdictDesc.textContent = 'Profil Anda berada di kuadran elit yang siap menyerap traffic organic massal.';
+          }
+        }
+      }
+
+      checkboxes.forEach(cb => {
+        cb.addEventListener('change', updateScore);
+      });
+
+      if (downloadBtn && downloadToast) {
+        downloadBtn.addEventListener('click', function() {
+          downloadToast.classList.remove('hidden');
+          downloadToast.classList.add('flex');
+          setTimeout(() => {
+            downloadToast.classList.add('hidden');
+            downloadToast.classList.remove('flex');
+          }, 4000);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-3xl"><div class="max-w-7xl mx-auto px-margin py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-2xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="fajarcreative Logo" class="w-8 h-8 rounded-full object-cover shrink-0 overflow-hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcuhGrgkRa_r1ZKyfRrpCl2oAWCs4olhYFwHZcg9L7rqzUF3JyPZ8-XrdSvF2vNmkIbT7KPYU1ttygGl6JSO8Gv3Ll-7IeT5jNXdHvBwUzLhIVjF4WD2GbV4UiKipOljp5jCKtfIMSxTxf3MMSShOCr5-LgC7566QnHsi5HN-fqUtCgF_y7WzNAiYtwKLMrnkM8A8BEN7KRzUnZMsaZjl1hPyP3aB1LYTgHy5Rc_Y1tgUjYCEdbWI5jQ"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">fajarcreative</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Toolkit esensial dan suite otomasi berkonversi tinggi untuk kreator konten, influencer, dan solopreneur digital Indonesia.</p><div class="flex items-center gap-space-sm mt-space-sm"><span class="px-space-sm py-space-xs rounded-full bg-surface-container-high font-label-sm text-label-sm text-tertiary-fixed">Verified Creator Hub</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Koleksi Toolkit</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="hook-reels-fomo" href="#">100+ Template Hook Viral Reels</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="audit-bio-ig" href="#">Checklist Audit Bio Instagram Pro</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pitch-brand-rate-card" href="#">Template Media Kit &amp; Sponsorship Pitch</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="kalkulator-cuan" href="#">Spreadsheet Kalkulator Cuan Kreator</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Komunitas Kreator</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Telegram Creator Circle</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Weekly Live Breakdown</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Sponsorship Deal Board</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Newsletter Insight Mingguan</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider mb-space-xs">Legal &amp; Bantuan</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Lisensi &amp; Penggunaan Aset</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Kebijakan Privasi</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Ketentuan Layanan</a><a class="font-body-sm text-body-sm text-tertiary hover:underline transition-colors flex items-center gap-1" href="https://wa.me/6282338903403" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-sm">chat</span> WhatsApp: 082338903403</a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 fajarcreative. Seluruh hak cipta dilindungi. • WA: 082338903403</p><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm text-on-surface-variant">Obsidian Studio Suite Standard</span><span class="font-label-sm text-label-sm text-primary-fixed-dim">ID Edition</span></div></div></div></footer>
+
+
+
+</body></html>
